@@ -407,3 +407,13 @@ footer form {
         background-color: #24252A;
     }
 }
+
+@media only screen and (orientation: portrait) {
+    html {
+        font-size: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        overflow-x: hidden;
+        background-color: #24252A;
+    }
+}
