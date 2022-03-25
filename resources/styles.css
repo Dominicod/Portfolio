@@ -1,0 +1,127 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #161616;
+}
+
+h1 {
+    padding-top: 2rem;
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #F1502F;
+    font-weight: bold;
+}
+.name_info > p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.name_info {
+    color: #E8E8E8;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+}
+.name_info > a {
+    color: #E8E8E8;
+}
+.name_info > a:hover {
+    color: #F1502F;
+}
+
+.name_btn {
+    margin-top: 0.5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name_btn > a {
+    text-align: center;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #F1502F;
+    border-radius: 0.2rem;
+    color: #E8E8E8;
+    text-decoration: none;
+}
+.name_btn > a:hover {
+    background-color: rgba(241,80,47,0.6);
+}
+
+/* Skills */
+.skills {
+    background-color: grey;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.skills-container {
+    margin: auto;
+    max-width: 60rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+}
+.logobg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1502F;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0.5rem;
+}
+.fa {
+    font-size: 4rem;
+    color: #E8E8E8;
+}
+
+/* Projects */
+
+.prjheader {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #F1502F;
+    font-size: 1.2rem;
+}
+.projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+@media only screen and (max-width: 600px) {
+    .skills-container {
+        flex-flow: column wrap;
+    }
+}
