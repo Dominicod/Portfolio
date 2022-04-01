@@ -5,74 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/styles.css">
     <title>Dominic's Portfolio</title>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Font styles -->
+    <script src="https://kit.fontawesome.com/39359afa97.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-    </style>
-    <script src="https://kit.fontawesome.com/39359afa97.js" crossorigin="anonymous" defer></script>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style> 
+    <!-- Javascript files -->
+    <script src="javascript/app.js" defer></script>
 </head>
-
-<body>
-    <header>
-        <h1>Dominic O'Donnell</h1>
-        <div class="name_info">
-            <p>Software Engineer</p>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="./img/DominicOD.jpg" alt="Dominic ODonnell Image">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">Hi, I'm <span>Dominic O'Donnell.</span><br /> Web Developer</h1>
+                <p>
+                    I love to create beautiful and functional websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa, nemo rem totam temporibus sint incidunt libero ad ea autem aliquam sequi tenetur illum exercitationem nobis, ab, corporis harum blanditiis quas!
+                </p>
+                <div class="btn-container">
+                    <a href="./img/Dominic's Resume.pdf" target="_blank" class="main-btn">
+                        <span class="btn-text">Hire Me! (Download CV)</span>
+                        <span class="btn-icon"><i class="fa fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="name_info"><a href="mailto:dominicodonnell99@gmail.com">dominicodonnell99@gmail.com</a></div>
-        <div class="name_info"><a href="https://github.com/Dominicod" target="_blank">https://github.com/Dominicod</a>
-        </div>
-        <div class="name_btn"><a href="resources/resume/Dominic's Resume.pdf" target="_blank">Hire me (See my
-                CV)</a></div>
     </header>
-    <div class="skills">
-        <div class="skills-container">
-            <div class="skill">
-                <div class="logobg">
-                    <i class="fa fa-solid fa-laptop-code"></i>
+    <main>
+        <!-- About -->
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About Me</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi dicta dignissimos iusto, quas nisi hic deleniti ducimus iure! 
+                        Ad corrupti nihil similique velit praesentium nisi, suscipit non eligendi alias!
+                        <br /><br />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus maxime minima est iure inventore voluptatem eius officiis 
+                        placeat impedit ipsam tempore, aut, veritatis illum animi consectetur amet nesciunt? Fuga, expedita.
+                    </p>
+                    <div class="btn-container">
+                        <a href="./img/Dominic's Resume.pdf" target="_blank" class="main-btn">
+                            <span class="btn-text">Hire Me! (Download CV)</span>
+                            <span class="btn-icon"><i class="fa fa-solid fa-download"></i></span>
+                        </a>
+                    </div>
                 </div>
-                <h2>Frontend</h2>
-                <p>HTML/CSS/JS, Bootstrap, Sass</p>
-            </div>
-            <div class="skill">
-                <div class="logobg">
-                    <i class="fa fa-solid fa-server"></i>
+                <div class="right-about">
+                    Skills
                 </div>
-                <h2>Backend</h2>
-                <p>Python, Flask, SQL, REST API's</p>
             </div>
-            <div class="skill">
-                <div class="logobg">
-                    <i class="fa fa-solid fa-toolbox"></i>
-                </div>
-                <h2>Tools</h2>
-                <p>Linux, Git</p>
-            </div>
-        </div>
-    </div>
-    <div class="projects">
-        <div class="prjheader">
-            <h2>Projects</h2>
-        </div>
-        <div class="prj-container">
-            <div class="prj">
-                <p>Image</p>
-                <p>Name of project</p>
-                <p>Project desc</p>
-            </div>
-            <div class="prj">
-                <p>Image</p>
-                <p>Name of project</p>
-                <p>Project desc</p>
-            </div>
-            <div class="prj">
-                <p>Image</p>
-                <p>Name of project</p>
-                <p>Project desc</p>
-            </div>
-        </div>
-    </div>
-    <div class="about"></div>
-</body>
+        </section>
+        <!-- Portfolio -->
+        <section class="section sec3 portfolio" id="portfolio">
 
+        </section>
+        <!-- Blogs -->
+        <section class="section sec4 blogs" id="blogs">
+
+        </section>
+        <!-- Contact -->
+        <section class="section sec5 contact" id="contact">
+
+        </section>
+    </main>
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa fa-solid fa-house-user"></i>
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa fa-solid fa-address-card"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="blogs">
+            <i class="fa fa-solid fa-book-open"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa fa-solid fa-envelope-open-text"></i>
+        </div>
+    </div>
+</body>
 </html>
