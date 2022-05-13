@@ -1,0 +1,158 @@
+@import '../abstracts/_variables.scss';
+
+.third-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 3rem 0 5rem 0;
+    width: 100%;
+}
+.third-page-color {
+    background-color: var(--color-grey-1);
+    position: relative;
+}
+.project-container {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.313rem;
+    z-index: 1;
+}
+.project-card {
+    margin-top: 2rem;
+    background-color: var(--color-grey-2);
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow-1);
+}
+.project-card-container {
+    position: relative;
+}
+.prj-img {
+    width: 100%;
+    height: 225px;
+    background-color: var(--color-primary);
+    border-radius: 5px 5px 0 0;
+}
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.project-card p {
+    padding: 0.5rem;
+    font-weight: 400;
+}
+.project-card a {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+.prj-skill-used {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+.prj-skill-used span {
+    background-color: var(--color-grey-1);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius-1);
+}
+.prj-git-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.prj-gitlink {
+    position: absolute;
+    left: 25.5rem;
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.prj-git-img a {
+    color: #ff9900;
+}
+
+/* PROJECT PAGE CIRCLES
+
+================================= */
+
+.circle-5 {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    bottom: 0;
+    right: 15rem;
+}
+
+.circle-5::before {
+    content: "";
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--color-primary-faded);
+}
+
+.circle-6 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    top: 10rem;
+    right: 8rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary-faded);
+}
+
+.circle-7 {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    bottom: 32rem;
+    left: 10rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary-faded);
+}
+
+.circle-8 {
+    overflow: hidden;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 0;
+    left: -5rem;
+}
+
+.circle-8::before {
+    content: "";
+    transform: translate(0, -50%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--color-primary-faded);
+}

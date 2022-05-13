@@ -1,0 +1,31 @@
+@import '../abstracts/_variables.scss';
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    font-weight: 400;
+}
+
+footer p {
+    width: 400px;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
+footer div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 400px;
+    gap: 0.5rem;
+}
+
+footer div a {
+    color: var(--color-black);
+    font-size: 1.2rem;
+}

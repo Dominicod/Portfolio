@@ -1,0 +1,137 @@
+@import '../abstracts/_variables.scss';
+
+/* SCREENS UNDER 1150PX
+
+================================= */
+
+@media only screen and (max-width: 1150px) {
+    .fp-right {
+        display: none;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .nav-navigation {
+        display: none;
+    }
+    .skills-desc {
+        width: 90%;
+    }
+    .skills-desc p {
+        width: 90%;
+    }
+    .project-container {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 400px;
+    }
+    .prj-gitlink {
+        left: 22.5rem;
+    }
+    .blog-card {
+        width: 400px;
+    }
+    .created {
+        display: none;
+    }
+    .contact-container form {
+        flex-direction: column;
+    }
+    .contact-links {
+        display: none;
+    }
+    .contact-container form input {
+        width: 300px;
+    }
+    .cnt-right {
+        margin: 0;
+    }
+    .cnt-right button {
+        align-self: center;
+    }
+
+    /* CIRCLE MOBILE
+
+FRONT PAGE CIRLCES
+
+================================= */
+
+    .circle-1 {
+        height: 20rem;
+        width: 20rem;
+    }
+    .circle-2 {
+        height: 15rem;
+        width: 15rem;
+        top: 5rem;
+    }
+    .circle-3 {
+        height: 10rem;
+        width: 10rem;
+    }
+    .circle-4 {
+        height: 8rem;
+        width: 8rem;
+        left: 15rem;
+    }
+
+    /* SKILLS CIRCLES (MOBILE)
+
+================================= */
+
+    .circle-5 {
+        height: 20rem;
+        width: 20rem;
+    }
+    .circle-6 {
+        height: 15rem;
+        width: 15rem;
+        top: 5rem;
+    }
+    .circle-7 {
+        height: 10rem;
+        width: 10rem;
+    }
+    .circle-8 {
+        height: 8rem;
+        width: 8rem;
+        left: 15rem;
+    }
+
+    /* CONTACT CIRCLES (MOBILE)
+
+================================= */
+
+    .circle-9 {
+        height: 10rem;
+        width: 10rem;
+    }
+    .circle-10 {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+/* SCREENS UNDER 400PX
+
+================================= */
+
+@media only screen and (max-width: 400px) {
+    main {
+        margin-top: 0.5rem;
+    }
+    .nav-body {
+        top: 0.5rem;
+    }
+    .project-card {
+        width: 350px;
+    }
+    .prj-gitlink {
+        left: 19.5rem;
+    }
+    .blog-card {
+        width: 350px;
+        height: 400px;
+    }
+}

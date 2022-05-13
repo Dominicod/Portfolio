@@ -1,0 +1,34 @@
+@import '../abstracts/_variables.scss';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.text-white {
+    color: var(--color-white);
+}
+.text-primary {
+    color: var(--color-primary);
+}
+.text-secondary {
+    color: var(--color-secondary);
+}
+.text-black {
+    color: var(--color-black);
+}
+body {
+    background-color: var(--color-grey-1);
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+}
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 40px;
+}

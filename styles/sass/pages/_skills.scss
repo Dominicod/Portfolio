@@ -1,0 +1,95 @@
+@import '../abstracts/_variables.scss';
+
+.second-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 3rem 0 5rem 0;
+    width: 100%;
+}
+.second-page-color {
+    background-color: var(--color-secondary);
+}
+.desc-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.desc-header h2 {
+    font-size: 3rem;
+    letter-spacing: var(--letter-space-1);
+    font-weight: 500;
+}
+.desc {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+}
+.desc p {
+    font-weight: 400;
+    width: 75%;
+    text-align: center;
+}
+.skills-container {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2.313rem;
+}
+.skill-card {
+    margin-top: 5rem;
+    background-color: var(--color-grey-1);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow-1);
+}
+.skill-card-container {
+    position: relative;
+}
+.skill-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--color-grey-1);
+}
+.skill-img-background {
+    position: absolute;
+    left: 7.5rem;
+    bottom: 18.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+.skill-card h3 {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: var(--letter-space-1);
+    font-weight: 400;
+}
+.skill-card ul {
+    padding: 2rem;
+}
+.skill-card ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}

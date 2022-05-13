@@ -1,0 +1,45 @@
+@import '../abstracts/_variables.scss';
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-body {
+    max-width: 1480px;
+    position: fixed;
+    top: 2rem;
+    z-index: 2;
+    width: 100%;
+    padding: 0 40px;
+}
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.nav-contact {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 140px;
+}
+.nav-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+    width: 140px;
+}
+nav a {
+    color: var(--color-white);
+}
