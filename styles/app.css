@@ -1,8 +1,6 @@
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -55,161 +53,6 @@ body {
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
-  --color-white: #ffffff;
-  --color-black: #000;
-  --color-grey-1: #272838;
-  --color-grey-2: #37393a;
-  --box-shadow-1: -10px 10px 10px rgba(0, 0, 0, 0.35);
-  --border-radius-1: 5px;
-  --letter-space-1: 0.1rem;
-}
-
-/* SCREENS UNDER 1150PX
-
-================================= */
-@media only screen and (max-width: 1150px) {
-  .fp-right {
-    display: none;
-  }
-  .skills-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav-navigation {
-    display: none;
-  }
-  .skills-desc {
-    width: 90%;
-  }
-  .skills-desc p {
-    width: 90%;
-  }
-  .project-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .project-card {
-    width: 400px;
-  }
-  .prj-gitlink {
-    left: 22.5rem;
-  }
-  .blog-card {
-    width: 400px;
-  }
-  .created {
-    display: none;
-  }
-  .contact-container form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-links {
-    display: none;
-  }
-  .contact-container form input {
-    width: 300px;
-  }
-  .cnt-right {
-    margin: 0;
-  }
-  .cnt-right button {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  /* CIRCLE MOBILE
-
-FRONT PAGE CIRLCES
-
-================================= */
-  .circle-1 {
-    height: 20rem;
-    width: 20rem;
-  }
-  .circle-2 {
-    height: 15rem;
-    width: 15rem;
-    top: 5rem;
-  }
-  .circle-3 {
-    height: 10rem;
-    width: 10rem;
-  }
-  .circle-4 {
-    height: 8rem;
-    width: 8rem;
-    left: 15rem;
-  }
-  /* SKILLS CIRCLES (MOBILE)
-
-================================= */
-  .circle-5 {
-    height: 20rem;
-    width: 20rem;
-  }
-  .circle-6 {
-    height: 15rem;
-    width: 15rem;
-    top: 5rem;
-  }
-  .circle-7 {
-    height: 10rem;
-    width: 10rem;
-  }
-  .circle-8 {
-    height: 8rem;
-    width: 8rem;
-    left: 15rem;
-  }
-  /* CONTACT CIRCLES (MOBILE)
-
-================================= */
-  .circle-9 {
-    height: 10rem;
-    width: 10rem;
-  }
-  .circle-10 {
-    height: 20rem;
-    width: 20rem;
-  }
-}
-
-/* SCREENS UNDER 400PX
-
-================================= */
-@media only screen and (max-width: 400px) {
-  main {
-    margin-top: 0.5rem;
-  }
-  .nav-body {
-    top: 0.5rem;
-  }
-  .project-card {
-    width: 350px;
-  }
-  .prj-gitlink {
-    left: 19.5rem;
-  }
-  .blog-card {
-    width: 350px;
-    height: 400px;
-  }
-}
-
-:root {
-  --color-primary: #77b6ea;
-  --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -303,8 +146,6 @@ nav a {
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -312,6 +153,35 @@ nav a {
   --box-shadow-1: -10px 10px 10px rgba(0, 0, 0, 0.35);
   --border-radius-1: 5px;
   --letter-space-1: 0.1rem;
+}
+
+.circle-FP-1, .circle-FP-2, .circle-FP-3, .circle-FP-4, .circle-Prj-1, .circle-Prj-2, .circle-Prj-3, .circle-Prj-4, .circle-Cnt-1, .circle-Cnt-2, .circle-Cnt-3, .circle-Cnt-4 {
+  overflow: hidden;
+  position: absolute;
+  opacity: 10%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover, .circle-FP-2:hover, .circle-FP-3:hover, .circle-FP-4:hover, .circle-Prj-1:hover, .circle-Prj-2:hover, .circle-Prj-3:hover, .circle-Prj-4:hover, .circle-Cnt-1:hover, .circle-Cnt-2:hover, .circle-Cnt-3:hover, .circle-Cnt-4:hover {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
+}
+
+.circle-FP-1::before, .circle-FP-4::before, .circle-Prj-1::before, .circle-Prj-4::before, .circle-Cnt-1::before, .circle-Cnt-4::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 100%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover::before, .circle-FP-4:hover::before, .circle-Prj-1:hover::before, .circle-Prj-4:hover::before, .circle-Cnt-1:hover::before, .circle-Cnt-4:hover::before {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
 }
 
 .front-page {
@@ -408,71 +278,57 @@ h1 {
 /* CIRCLE STYLES
 
 ======================== */
-.circle-1 {
-  overflow: hidden;
-  position: absolute;
-  width: 25vw;
+.circle-FP-1 {
   height: 25vw;
+  width: 25vw;
   bottom: 0;
   right: 0;
 }
 
-.circle-1::before {
-  content: "";
-  -webkit-transform: translate(40%, 40%);
-          transform: translate(40%, 40%);
-  position: absolute;
+.circle-FP-1::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
 }
 
-.circle-2 {
-  position: absolute;
-  width: 15vw;
+.circle-FP-2 {
   height: 15vw;
+  width: 15vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   top: 16rem;
   right: 20rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-3 {
-  position: absolute;
-  width: 15vw;
+.circle-FP-3 {
   height: 15vw;
+  width: 15vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   bottom: 8rem;
   left: 2rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-4 {
-  overflow: hidden;
-  position: absolute;
-  width: 10vw;
+.circle-FP-4 {
   height: 10vw;
+  width: 10vw;
   top: 0;
   left: 30rem;
 }
 
-.circle-4::before {
-  content: "";
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  position: absolute;
+.circle-FP-4::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -644,8 +500,6 @@ h1 {
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -653,6 +507,35 @@ h1 {
   --box-shadow-1: -10px 10px 10px rgba(0, 0, 0, 0.35);
   --border-radius-1: 5px;
   --letter-space-1: 0.1rem;
+}
+
+.circle-FP-1, .circle-FP-2, .circle-FP-3, .circle-FP-4, .circle-Prj-1, .circle-Prj-2, .circle-Prj-3, .circle-Prj-4, .circle-Cnt-1, .circle-Cnt-2, .circle-Cnt-3, .circle-Cnt-4 {
+  overflow: hidden;
+  position: absolute;
+  opacity: 10%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover, .circle-FP-2:hover, .circle-FP-3:hover, .circle-FP-4:hover, .circle-Prj-1:hover, .circle-Prj-2:hover, .circle-Prj-3:hover, .circle-Prj-4:hover, .circle-Cnt-1:hover, .circle-Cnt-2:hover, .circle-Cnt-3:hover, .circle-Cnt-4:hover {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
+}
+
+.circle-FP-1::before, .circle-FP-4::before, .circle-Prj-1::before, .circle-Prj-4::before, .circle-Cnt-1::before, .circle-Cnt-4::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 100%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover::before, .circle-FP-4:hover::before, .circle-Prj-1:hover::before, .circle-Prj-4:hover::before, .circle-Cnt-1:hover::before, .circle-Cnt-4:hover::before {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
 }
 
 .third-page {
@@ -812,70 +695,57 @@ h1 {
 /* PROJECT PAGE CIRCLES
 
 ================================= */
-.circle-5 {
-  position: absolute;
-  width: 15vw;
+.circle-Prj-1 {
   height: 15vw;
+  width: 15vw;
   bottom: 0;
-  right: 15rem;
+  right: 0;
 }
 
-.circle-5::before {
-  content: "";
-  -webkit-transform: translate(40%, 40%);
-          transform: translate(40%, 40%);
-  position: absolute;
+.circle-Prj-1::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
 }
 
-.circle-6 {
-  position: absolute;
-  width: 25vw;
+.circle-Prj-2 {
   height: 25vw;
+  width: 25vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   top: 10rem;
   right: 8rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-7 {
-  position: absolute;
-  width: 15vw;
+.circle-Prj-3 {
   height: 15vw;
+  width: 15vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   bottom: 32rem;
   left: 10rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-8 {
-  overflow: hidden;
-  position: absolute;
-  width: 10vw;
+.circle-Prj-4 {
   height: 10vw;
+  width: 10vw;
   top: 0;
   left: -5rem;
 }
 
-.circle-8::before {
-  content: "";
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  position: absolute;
+.circle-Prj-4::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -984,8 +854,6 @@ h1 {
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;
@@ -993,6 +861,35 @@ h1 {
   --box-shadow-1: -10px 10px 10px rgba(0, 0, 0, 0.35);
   --border-radius-1: 5px;
   --letter-space-1: 0.1rem;
+}
+
+.circle-FP-1, .circle-FP-2, .circle-FP-3, .circle-FP-4, .circle-Prj-1, .circle-Prj-2, .circle-Prj-3, .circle-Prj-4, .circle-Cnt-1, .circle-Cnt-2, .circle-Cnt-3, .circle-Cnt-4 {
+  overflow: hidden;
+  position: absolute;
+  opacity: 10%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover, .circle-FP-2:hover, .circle-FP-3:hover, .circle-FP-4:hover, .circle-Prj-1:hover, .circle-Prj-2:hover, .circle-Prj-3:hover, .circle-Prj-4:hover, .circle-Cnt-1:hover, .circle-Cnt-2:hover, .circle-Cnt-3:hover, .circle-Cnt-4:hover {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
+}
+
+.circle-FP-1::before, .circle-FP-4::before, .circle-Prj-1::before, .circle-Prj-4::before, .circle-Cnt-1::before, .circle-Cnt-4::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 100%;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.circle-FP-1:hover::before, .circle-FP-4:hover::before, .circle-Prj-1:hover::before, .circle-Prj-4:hover::before, .circle-Cnt-1:hover::before, .circle-Cnt-4:hover::before {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  opacity: 50%;
 }
 
 .fifth-page {
@@ -1155,71 +1052,57 @@ h1 {
 /* CONTACT PAGE CIRCLES
 
 ================================= */
-.circle-9 {
-  overflow: hidden;
-  position: absolute;
-  width: 15vw;
+.circle-Cnt-1 {
   height: 15vw;
+  width: 15vw;
   bottom: 0;
   right: 0rem;
 }
 
-.circle-9::before {
-  content: "";
-  -webkit-transform: translate(40%, 40%);
-          transform: translate(40%, 40%);
-  position: absolute;
+.circle-Cnt-1::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
 }
 
-.circle-10 {
-  position: absolute;
-  width: 10vw;
+.circle-Cnt-2 {
   height: 10vw;
+  width: 10vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   top: 10rem;
   right: 20rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-11 {
-  position: absolute;
-  width: 15vw;
+.circle-Cnt-3 {
   height: 15vw;
+  width: 15vw;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
   bottom: 15rem;
   left: 10rem;
-  border-radius: 50%;
-  background-color: var(--color-secondary-faded);
 }
 
-.circle-12 {
-  overflow: hidden;
-  position: absolute;
-  width: 10vw;
+.circle-Cnt-4 {
   height: 10vw;
+  width: 10vw;
   top: 0;
   left: -5rem;
 }
 
-.circle-12::before {
-  content: "";
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  position: absolute;
+.circle-Cnt-4::before {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: var(--color-primary-faded);
+  background-color: var(--color-primary);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
-  --color-primary-faded: rgba(119, 182, 234, 0.1);
-  --color-secondary-faded: rgba(147, 229, 171, 0.1);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-1: #272838;

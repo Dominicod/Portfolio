@@ -1,4 +1,7 @@
 @import '../abstracts/_variables.scss';
+// Imports styles for background 'circle' styles.
+@import '../abstracts/_mixins/circle';
+@import '../abstracts/_placeholders/circle';
 
 .fifth-page {
     overflow: hidden;
@@ -94,60 +97,48 @@
 
 ================================= */
 
-.circle-9 {
-    overflow: hidden;
-    position: absolute;
-    width: 15vw;
-    height: 15vw;
+.circle-Cnt-1 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
     bottom: 0;
     right: 0rem;
 }
 
-.circle-9::before {
-    content: "";
+.circle-Cnt-1::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
     transform: translate(40%, 40%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: var(--color-primary-faded);
 }
 
-.circle-10 {
-    position: absolute;
-    width: 10vw;
-    height: 10vw;
+.circle-Cnt-2 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
     top: 10rem;
     right: 20rem;
-    border-radius: 50%;
-    background-color: var(--color-secondary-faded);
 }
 
-.circle-11 {
-    position: absolute;
-    width: 15vw;
-    height: 15vw;
+.circle-Cnt-3 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
     bottom: 15rem;
     left: 10rem;
-    border-radius: 50%;
-    background-color: var(--color-secondary-faded);
 }
 
-.circle-12 {
-    overflow: hidden;
-    position: absolute;
-    width: 10vw;
-    height: 10vw;
+.circle-Cnt-4 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
     top: 0;
     left: -5rem;
 }
 
-.circle-12::before {
-    content: "";
+.circle-Cnt-4::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
     transform: translate(0, -50%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: var(--color-primary-faded);
 }
