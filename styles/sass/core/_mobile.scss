@@ -1,5 +1,3 @@
-@import '../abstracts/_variables.scss';
-
 /* SCREENS UNDER 1150PX
 
 ================================= */
@@ -51,65 +49,10 @@
         align-self: center;
     }
 
-    /* CIRCLE MOBILE
+    /* CIRCLE MOBILE */
 
-FRONT PAGE CIRLCES
-
-================================= */
-
-    .circle-1 {
-        height: 20rem;
-        width: 20rem;
-    }
-    .circle-2 {
-        height: 15rem;
-        width: 15rem;
-        top: 5rem;
-    }
-    .circle-3 {
-        height: 10rem;
-        width: 10rem;
-    }
-    .circle-4 {
-        height: 8rem;
-        width: 8rem;
-        left: 15rem;
-    }
-
-    /* SKILLS CIRCLES (MOBILE)
-
-================================= */
-
-    .circle-5 {
-        height: 20rem;
-        width: 20rem;
-    }
-    .circle-6 {
-        height: 15rem;
-        width: 15rem;
-        top: 5rem;
-    }
-    .circle-7 {
-        height: 10rem;
-        width: 10rem;
-    }
-    .circle-8 {
-        height: 8rem;
-        width: 8rem;
-        left: 15rem;
-    }
-
-    /* CONTACT CIRCLES (MOBILE)
-
-================================= */
-
-    .circle-9 {
-        height: 10rem;
-        width: 10rem;
-    }
-    .circle-10 {
-        height: 20rem;
-        width: 20rem;
+    .mobile-Circle {
+        display: none;
     }
 }
 

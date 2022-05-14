@@ -1,6 +1,12 @@
+// Layout
+
 @import './sass/core/_boilerplate.scss';
 
 @import './sass/layout/_navigation.scss';
+
+@import './sass/layout/page';
+
+// Main Pages
 
 @import './sass/pages/_frontpage.scss';
 
@@ -12,6 +18,12 @@
 
 @import './sass/pages/_contact.scss';
 
+@import './sass/layout/_footer.scss';
+
+// Extra Styles
+
 @import './sass/layout/_circles';
 
-@import './sass/layout/_footer.scss';
+// Mobile
+
+@import './sass/core/_mobile';

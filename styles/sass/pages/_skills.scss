@@ -1,16 +1,6 @@
-@import '../abstracts/_variables.scss';
-
-.second-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 3rem 0 5rem 0;
-    width: 100%;
-}
-.second-page-color {
+.skills-page-color {
     background-color: var(--color-secondary);
+    position: relative;
 }
 .desc-header {
     display: flex;
@@ -35,12 +25,6 @@
     font-weight: 400;
     width: 75%;
     text-align: center;
-}
-.skills-container {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: row;
-    gap: 2.313rem;
 }
 .skill-card {
     margin-top: 5rem;

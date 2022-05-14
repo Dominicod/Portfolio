@@ -1,29 +1,8 @@
-@import '../abstracts/_variables.scss';
-
-.fifth-page {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 3rem 0 5rem 0;
-    width: 100%;
-}
-.fifth-page-color {
+.contact-page-color {
     background-color: var(--color-grey-1);
     position: relative;
 }
-.contact-container {
-    padding: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-.contact-container form {
+.page-container form {
     display: flex;
     justify-content: center;
     align-items: center;

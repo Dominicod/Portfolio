@@ -1,27 +1,6 @@
-@import '../abstracts/_variables.scss';
-
-.third-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 3rem 0 5rem 0;
-    width: 100%;
-}
-.third-page-color {
+.project-page-color {
     background-color: var(--color-grey-1);
     position: relative;
-}
-.project-container {
-    padding: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2.313rem;
-    z-index: 1;
 }
 .project-card {
     margin-top: 2rem;

@@ -1,28 +1,6 @@
-@import '../abstracts/_variables.scss';
-
-.fourth-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 3rem 0 5rem 0;
-    width: 100%;
-}
-.fourth-page-color {
-    z-index: 2;
+.blog-page-color {
     background-color: var(--color-primary);
     position: relative;
-}
-.blog-container {
-    padding: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2.313rem;
-    z-index: 1;
 }
 .blog-card {
     margin-top: 2rem;
