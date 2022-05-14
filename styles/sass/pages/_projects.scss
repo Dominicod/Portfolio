@@ -1,7 +1,4 @@
 @import '../abstracts/_variables.scss';
-// Imports styles for background 'circle' styles.
-@import '../abstracts/_mixins/circle';
-@import '../abstracts/_placeholders/circle';
 
 .third-page {
     display: flex;
@@ -97,54 +94,4 @@
 }
 .prj-git-img a {
     color: #ff9900;
-}
-
-/* PROJECT PAGE CIRCLES
-
-================================= */
-
-.circle-Prj-1 {
-    @include circle-HeightWidth(15vw);
-    @extend %circle;
-    bottom: 0;
-    right: 0;
-}
-
-.circle-Prj-1::before {
-    @include circle-HeightWidth(100%);
-    @extend %circle-translated;
-    background-color: var(--color-primary);
-    transform: translate(40%, 40%);
-}
-
-.circle-Prj-2 {
-    @include circle-HeightWidth(25vw);
-    @extend %circle;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    top: 10rem;
-    right: 8rem;
-}
-
-.circle-Prj-3 {
-    @include circle-HeightWidth(15vw);
-    @extend %circle;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    bottom: 32rem;
-    left: 10rem;
-}
-
-.circle-Prj-4 {
-    @include circle-HeightWidth(10vw);
-    @extend %circle;
-    top: 0;
-    left: -5rem;
-}
-
-.circle-Prj-4::before {
-    @include circle-HeightWidth(100%);
-    @extend %circle-translated;
-    background-color: var(--color-primary);
-    transform: translate(0, -50%);
 }

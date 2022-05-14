@@ -1,7 +1,4 @@
 @import '../abstracts/_variables.scss';
-// Imports styles for background 'circle' styles.
-@import '../abstracts/_mixins/circle';
-@import '../abstracts/_placeholders/circle';
 
 .front-page {
     display: flex;
@@ -63,54 +60,4 @@ h1 {
     width: 40rem;
     background-repeat: no-repeat;
     background-position: bottom;
-}
-
-/* CIRCLE STYLES
-
-======================== */
-
-.circle-FP-1 {
-    @include circle-HeightWidth(25vw);
-    @extend %circle;
-    bottom: 0;
-    right: 0;
-}
-
-.circle-FP-1::before {
-    @include circle-HeightWidth(100%);
-    @extend %circle-translated;
-    background-color: var(--color-primary);
-    transform: translate(40%, 40%);
-}
-
-.circle-FP-2 {
-    @include circle-HeightWidth(15vw);
-    @extend %circle;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    top: 16rem;
-    right: 20rem;
-}
-
-.circle-FP-3 {
-    @include circle-HeightWidth(15vw);
-    @extend %circle;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    bottom: 8rem;
-    left: 2rem;
-}
-
-.circle-FP-4 {
-    @include circle-HeightWidth(10vw);
-    @extend %circle;
-    top: 0;
-    left: 30rem;
-}
-
-.circle-FP-4::before {
-    @include circle-HeightWidth(100%);
-    @extend %circle-translated;
-    background-color: var(--color-primary);
-    transform: translate(0, -50%);
 }

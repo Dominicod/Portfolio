@@ -1,0 +1,153 @@
+@import '../abstracts/_mixins/circle';
+@import '../abstracts/_placeholders/circle';
+
+/* FONT PAGE CIRCLE STYLES
+
+======================== */
+
+.circle-FP-1 {
+    @include circle-HeightWidth(25vw);
+    @extend %circle;
+    bottom: 0;
+    right: 0;
+}
+
+.circle-FP-1::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(40%, 40%);
+}
+
+.circle-FP-2 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    top: 16rem;
+    right: 20rem;
+}
+
+.circle-FP-3 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    bottom: 8rem;
+    left: 2rem;
+}
+
+.circle-FP-4 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
+    top: 0;
+    left: 30rem;
+}
+
+.circle-FP-4::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(0, -50%);
+}
+
+
+/* PROJECT PAGE CIRCLES
+
+================================= */
+
+.circle-Prj-1 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    bottom: 0;
+    right: 0;
+}
+
+.circle-Prj-1::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(40%, 40%);
+}
+
+.circle-Prj-2 {
+    @include circle-HeightWidth(25vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    top: 10rem;
+    right: 8rem;
+}
+
+.circle-Prj-3 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    bottom: 32rem;
+    left: 10rem;
+}
+
+.circle-Prj-4 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
+    top: 0;
+    left: -5rem;
+}
+
+.circle-Prj-4::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(0, -50%);
+}
+
+/* CONTACT PAGE CIRCLES
+
+================================= */
+
+.circle-Cnt-1 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    bottom: 0;
+    right: 0rem;
+}
+
+.circle-Cnt-1::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(40%, 40%);
+}
+
+.circle-Cnt-2 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    top: 10rem;
+    right: 20rem;
+}
+
+.circle-Cnt-3 {
+    @include circle-HeightWidth(15vw);
+    @extend %circle;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    bottom: 15rem;
+    left: 10rem;
+}
+
+.circle-Cnt-4 {
+    @include circle-HeightWidth(10vw);
+    @extend %circle;
+    top: 0;
+    left: -5rem;
+}
+
+.circle-Cnt-4::before {
+    @include circle-HeightWidth(100%);
+    @extend %circle-translated;
+    background-color: var(--color-primary);
+    transform: translate(0, -50%);
+}
