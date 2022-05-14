@@ -1,26 +1,26 @@
-@import '../abstracts/_mixins/circle';
-@import '../abstracts/_placeholders/circle';
+@import '../abstracts/_mixins/_size';
+@import '../abstracts/_placeholders/_circle';
 
 /* FONT PAGE CIRCLE STYLES
 
 ======================== */
 
 .circle-FP-1 {
-    @include circle-HeightWidth(25vw);
+    @include size(25vw, 25vw);
     @extend %circle;
     bottom: 0;
     right: 0;
 }
 
 .circle-FP-1::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(40%, 40%);
 }
 
 .circle-FP-2 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
@@ -29,7 +29,7 @@
 }
 
 .circle-FP-3 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
@@ -38,14 +38,14 @@
 }
 
 .circle-FP-4 {
-    @include circle-HeightWidth(10vw);
+    @include size(10vw, 10vw);
     @extend %circle;
     top: 0;
     left: 30rem;
 }
 
 .circle-FP-4::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(0, -50%);
@@ -57,30 +57,30 @@
 ================================= */
 
 .circle-Prj-1 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     bottom: 0;
     right: 0;
 }
 
 .circle-Prj-1::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(40%, 40%);
 }
 
 .circle-Prj-2 {
-    @include circle-HeightWidth(25vw);
+    @include size(25vw, 25vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
-    top: 10rem;
+    top: 12rem;
     right: 8rem;
 }
 
 .circle-Prj-3 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
@@ -89,14 +89,14 @@
 }
 
 .circle-Prj-4 {
-    @include circle-HeightWidth(10vw);
+    @include size(10vw, 10vw);
     @extend %circle;
     top: 0;
     left: -5rem;
 }
 
 .circle-Prj-4::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(0, -50%);
@@ -107,21 +107,21 @@
 ================================= */
 
 .circle-Cnt-1 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     bottom: 0;
     right: 0rem;
 }
 
 .circle-Cnt-1::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(40%, 40%);
 }
 
 .circle-Cnt-2 {
-    @include circle-HeightWidth(10vw);
+    @include size(10vw, 10vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
@@ -130,7 +130,7 @@
 }
 
 .circle-Cnt-3 {
-    @include circle-HeightWidth(15vw);
+    @include size(15vw, 15vw);
     @extend %circle;
     background-color: var(--color-secondary);
     border-radius: 50%;
@@ -139,14 +139,14 @@
 }
 
 .circle-Cnt-4 {
-    @include circle-HeightWidth(10vw);
+    @include size(10vw, 10vw);
     @extend %circle;
     top: 0;
     left: -5rem;
 }
 
 .circle-Cnt-4::before {
-    @include circle-HeightWidth(100%);
+    @include size(100%, 100%);
     @extend %circle-translated;
     background-color: var(--color-primary);
     transform: translate(0, -50%);

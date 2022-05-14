@@ -1,16 +1,15 @@
+@import "../abstracts/_mixins/size";
+@import "../abstracts/_placeholders/card";
+
 .project-page-color {
     background-color: var(--color-grey-1);
     position: relative;
 }
 .project-card {
+    @extend %card;
+    @include size(450px, 450px);
     margin-top: 2rem;
     background-color: var(--color-grey-2);
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    height: 500px;
-    border-radius: var(--border-radius-1);
-    box-shadow: var(--box-shadow-1);
 }
 .project-card-container {
     position: relative;

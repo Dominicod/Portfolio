@@ -1,0 +1,12 @@
+.desc-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.desc-header h2 {
+    font-size: 3rem;
+    letter-spacing: var(--letter-space-1);
+    font-weight: 500;
+}

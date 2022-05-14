@@ -6,10 +6,6 @@
     height: 100vh;
     width: 100%;
 }
-.front-page-color {
-    background-color: var(--color-grey-1);
-    position: relative;
-}
 .fp-left {
     height: 100vh;
     display: flex;
@@ -45,13 +41,6 @@ h1 {
 }
 .frontpage-btn {
     margin-top: 4rem;
-    color: var(--color-black);
-    border-radius: var(--border-radius-1);
-    background-color: var(--color-primary);
-    padding: 0.5rem;
-    width: 14rem;
-    font-weight: 500;
-    text-align: center;
 }
 .image {
     background-image: url(../img/Temp-IMG.png);

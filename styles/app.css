@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 :root {
   --color-primary: #77b6ea;
   --color-secondary: #93e5ab;
@@ -40,7 +41,7 @@
 body {
   background-color: var(--color-grey-1);
   font-family: Poppins, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .container {
@@ -120,6 +121,32 @@ nav a {
   z-index: 1;
 }
 
+.button {
+  color: var(--color-black);
+  border-radius: var(--border-radius-1);
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0.5rem;
+  width: 14rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.desc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.desc-header h2 {
+  font-size: 3rem;
+  letter-spacing: var(--letter-space-1);
+  font-weight: 500;
+}
+
 .front-page {
   display: flex;
   flex-direction: row;
@@ -127,11 +154,6 @@ nav a {
   align-items: center;
   height: 100vh;
   width: 100%;
-}
-
-.front-page-color {
-  background-color: var(--color-grey-1);
-  position: relative;
 }
 
 .fp-left {
@@ -175,13 +197,6 @@ h1 {
 
 .frontpage-btn {
   margin-top: 4rem;
-  color: var(--color-black);
-  border-radius: var(--border-radius-1);
-  background-color: var(--color-primary);
-  padding: 0.5rem;
-  width: 14rem;
-  font-weight: 500;
-  text-align: center;
 }
 
 .image {
@@ -192,23 +207,23 @@ h1 {
   background-position: bottom;
 }
 
+.blog-card, .project-card, .skill-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-1);
+}
+
 .skills-page-color {
   background-color: var(--color-secondary);
   position: relative;
 }
 
-.desc-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.desc-header h2 {
-  font-size: 3rem;
-  letter-spacing: var(--letter-space-1);
-  font-weight: 500;
+.skill-card {
+  height: 350px;
+  width: 350px;
+  margin-top: 5rem;
+  background-color: var(--color-grey-1);
 }
 
 .desc {
@@ -223,17 +238,6 @@ h1 {
   font-weight: 400;
   width: 75%;
   text-align: center;
-}
-
-.skill-card {
-  margin-top: 5rem;
-  background-color: var(--color-grey-1);
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 350px;
-  border-radius: var(--border-radius-1);
-  box-shadow: var(--box-shadow-1);
 }
 
 .skill-card-container {
@@ -283,20 +287,23 @@ h1 {
   font-size: 1.1rem;
 }
 
+.blog-card, .project-card, .skill-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-1);
+}
+
 .project-page-color {
   background-color: var(--color-grey-1);
   position: relative;
 }
 
 .project-card {
+  height: 450px;
+  width: 450px;
   margin-top: 2rem;
   background-color: var(--color-grey-2);
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  height: 500px;
-  border-radius: var(--border-radius-1);
-  box-shadow: var(--box-shadow-1);
 }
 
 .project-card-container {
@@ -371,20 +378,29 @@ h1 {
   color: #ff9900;
 }
 
+.blog-card, .skill-card, .project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-1);
+}
+
 .blog-page-color {
   background-color: var(--color-primary);
   position: relative;
 }
 
 .blog-card {
-  margin-top: 2rem;
-  background-color: var(--color-grey-1);
-  display: flex;
-  flex-direction: column;
-  width: 615px;
   height: 375px;
-  border-radius: var(--border-radius-1);
-  box-shadow: var(--box-shadow-1);
+  width: 615px;
+  margin-top: 5rem;
+  background-color: var(--color-grey-1);
+}
+.blog-card a {
+  color: #0c7fde;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .blog-img {
@@ -394,24 +410,16 @@ h1 {
   border-radius: 5px 5px 0 0;
 }
 
-.blog-card a {
-  color: #0c7fde;
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding: 0.5rem 0 0 0.5rem;
-}
-
 .blog-time {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
 }
 
 .blog-desc {
-  padding-left: 0.5rem;
-  font-weight: 300;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .contact-page-color {
@@ -482,16 +490,7 @@ h1 {
 }
 
 .cnt-right button {
-  border: none;
   align-self: end;
-  color: var(--color-black);
-  border-radius: var(--border-radius-1);
-  background-color: var(--color-primary);
-  padding: 0.5rem;
-  width: 14rem;
-  font-weight: 500;
-  cursor: pointer;
-  text-align: center;
 }
 
 footer {
@@ -618,7 +617,7 @@ footer div a {
   width: 25vw;
   background-color: var(--color-secondary);
   border-radius: 50%;
-  top: 10rem;
+  top: 12rem;
   right: 8rem;
 }
 
@@ -698,68 +697,57 @@ footer div a {
 
 ================================= */
 @media only screen and (max-width: 1150px) {
-  .fp-right {
-    display: none;
-  }
-
-  .skills-container {
+  .page-container {
     flex-direction: column;
   }
 
-  .nav-navigation {
-    display: none;
-  }
-
-  .skills-desc {
-    width: 90%;
-  }
-
-  .skills-desc p {
-    width: 90%;
-  }
-
-  .project-container {
+  .page-container form {
     flex-direction: column;
   }
 
-  .project-card {
+  .blog-card {
+    margin: 1rem;
+  }
+
+  .project-card, .blog-card {
     width: 400px;
+  }
+
+  .contact-container form input {
+    width: 100%;
   }
 
   .prj-gitlink {
     left: 22.5rem;
   }
 
-  .blog-card {
-    width: 400px;
-  }
-
-  .created {
-    display: none;
-  }
-
-  .contact-container form {
-    flex-direction: column;
-  }
-
-  .contact-links {
-    display: none;
-  }
-
-  .contact-container form input {
-    width: 300px;
-  }
-
-  .cnt-right {
+  .cnt-right, .cnt-right input {
     margin: 0;
+    width: 100%;
   }
 
   .cnt-right button {
     align-self: center;
   }
 
-  /* CIRCLE MOBILE */
+  /* REMOVAL MOBILE */
   .mobile-Circle {
+    display: none;
+  }
+
+  .nav-navigation {
+    display: none;
+  }
+
+  .contact-links {
+    display: none;
+  }
+
+  .fp-right {
+    display: none;
+  }
+
+  .created {
     display: none;
   }
 }
@@ -775,17 +763,12 @@ footer div a {
     top: 0.5rem;
   }
 
-  .project-card {
+  .project-card, .blog-card {
     width: 350px;
   }
 
   .prj-gitlink {
     left: 19.5rem;
-  }
-
-  .blog-card {
-    width: 350px;
-    height: 400px;
   }
 }
 

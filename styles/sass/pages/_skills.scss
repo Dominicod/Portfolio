@@ -1,18 +1,15 @@
+@import "../abstracts/_mixins/size";
+@import "../abstracts/_placeholders/card";
+
 .skills-page-color {
     background-color: var(--color-secondary);
     position: relative;
 }
-.desc-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-.desc-header h2 {
-    font-size: 3rem;
-    letter-spacing: var(--letter-space-1);
-    font-weight: 500;
+.skill-card {
+    @extend %card;
+    @include size(350px, 350px);
+    margin-top: 5rem;
+    background-color: var(--color-grey-1);
 }
 .desc {
     display: flex;
@@ -25,16 +22,6 @@
     font-weight: 400;
     width: 75%;
     text-align: center;
-}
-.skill-card {
-    margin-top: 5rem;
-    background-color: var(--color-grey-1);
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 350px;
-    border-radius: var(--border-radius-1);
-    box-shadow: var(--box-shadow-1);
 }
 .skill-card-container {
     position: relative;

@@ -4,9 +4,15 @@
 
 @import './sass/layout/_navigation.scss';
 
-@import './sass/layout/page';
+@import './sass/layout/_page.scss';
+
+// Components
+
+@import './sass/components/_buttons.scss';
 
 // Main Pages
+
+@import './sass/layout/_header.scss';
 
 @import './sass/pages/_frontpage.scss';
 
@@ -22,8 +28,8 @@
 
 // Extra Styles
 
-@import './sass/layout/_circles';
+@import './sass/layout/_circles.scss';
 
 // Mobile
 
-@import './sass/core/_mobile';
+@import './sass/core/_mobile.scss';
