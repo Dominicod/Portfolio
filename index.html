@@ -61,7 +61,7 @@
         <!-- MAIN CONTENT -->
         <main>
             <!-- FRONT-PAGE -->
-            <section id="front-page">
+            <section id="front-page" class="front-page-color">
                 <div class="container front-page">
                     <div class="fp-left">
                         <div class="frontpage-hello">
@@ -104,6 +104,12 @@
                     <div class="mobile-Circle circle-FP-2"></div>
                     <div class="mobile-Circle circle-FP-3"></div>
                     <div class="mobile-Circle circle-FP-4"></div>
+                </div>
+                <!-- CURVE -->
+                <div class="curve-FP">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
                 </div>
             </section>
             <!-- SKILLS -->
@@ -228,6 +234,12 @@
             </section>
             <!-- PROJECTS -->
             <section id="project" class="project-page-color">
+                <!-- CURVE -->
+                <div class="curve-PRJ">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
                 <div class="container page">
                     <header class="desc-header text-white">
                         <h2>Projects</h2>
@@ -452,6 +464,12 @@
                     <div class="mobile-Circle circle-Prj-3"></div>
                     <div class="mobile-Circle circle-Prj-4"></div>
                 </div>
+                <!-- CURVE -->
+                <div class="curve-BLOG">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
             </section>
             <!-- BLOG -->
             <section id="blog" class="blog-page-color">
@@ -538,6 +556,12 @@
             </section>
             <!-- CONTACT -->
             <section id="contact" class="contact-page-color"">
+                <!-- CURVE -->
+                <div class="curve-CNT">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
                 <div class="container page">
                     <header class="desc-header text-white">
                         <h2>Contact</h2>
@@ -553,11 +577,11 @@
                         <form action="#">
                             <div class="cnt-left">
                                 <label class="text-primary" for="name">Name:</label>
-                                <input id="name" type="text">
+                                <input id="name" type="text" required>
                                 <label class="text-primary" for="name">Email:</label>
-                                <input id="email" type="text">
+                                <input id="email" type="text" required>
                                 <label class="text-primary" for="name">Company/Organization:</label>
-                                <input id="company" type="text">
+                                <input id="company" type="text" required>
                                 <div class="text-white contact-links">
                                     <a
                                         href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/"
@@ -571,7 +595,8 @@
                             </div>
                             <div class="cnt-right">
                                 <label class="text-primary" for="name">Message:</label>
-                                <input id="name" type="text">
+                                <textarea id="text" type="text" required>
+                                </textarea>
                                 <button class="button" type="submit">Submit</button>
                             </div>
                         </form>
@@ -584,7 +609,7 @@
                 <div class="mobile-Circle circle-Cnt-4"></div>
             </section>
         </main>
-        <!-- FOOTER -->
+            <!-- FOOTER -->
         <footer>
             <p class="text-black created">Created with: SASS/Flask</p>
             <p class="text-black credit">

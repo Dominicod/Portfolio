@@ -1,4 +1,4 @@
-// Layout
+/* Layout */
 
 @import './sass/core/_boilerplate.scss';
 
@@ -6,13 +6,15 @@
 
 @import './sass/layout/_page.scss';
 
-// Components
+@import './sass/layout/_header.scss';
+
+@import './sass/layout/_footer.scss';
+
+/* Components */
 
 @import './sass/components/_buttons.scss';
 
-// Main Pages
-
-@import './sass/layout/_header.scss';
+/* Main Pages */
 
 @import './sass/pages/_frontpage.scss';
 
@@ -24,12 +26,10 @@
 
 @import './sass/pages/_contact.scss';
 
-@import './sass/layout/_footer.scss';
-
-// Extra Styles
+/* Extra Styles */
 
 @import './sass/layout/_circles.scss';
 
-// Mobile
+/* Mobile */
 
 @import './sass/core/_mobile.scss';

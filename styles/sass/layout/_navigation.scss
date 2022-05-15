@@ -7,7 +7,7 @@
     max-width: 1480px;
     position: fixed;
     top: 2rem;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     padding: 0 40px;
 }
@@ -39,5 +39,10 @@ nav {
     width: 140px;
 }
 nav a {
+    transition: color 500ms ease-in-out;
     color: var(--color-white);
+}
+nav a:hover {
+    transition: color 500ms ease-in-out;
+    color: var(--color-primary);
 }

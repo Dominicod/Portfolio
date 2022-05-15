@@ -4,6 +4,7 @@
 .skills-page-color {
     background-color: var(--color-secondary);
     position: relative;
+    z-index: 2;
 }
 .skill-card {
     @extend %card;

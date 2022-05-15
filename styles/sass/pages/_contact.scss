@@ -1,6 +1,21 @@
 .contact-page-color {
     background-color: var(--color-grey-1);
     position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.curve-CNT {
+    @extend %curve;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.curve-CNT svg {
+    @extend %curveSVG;
+    @include size(100px, calc(120% + 1.3px));
+}
+.curve-CNT .shape-fill {
+    fill: var(--color-primary);
 }
 .page-container form {
     display: flex;
@@ -22,6 +37,9 @@
     width: 425px;
     height: 40px;
     margin-bottom: 1rem;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    padding: 0.5rem;
 }
 .cnt-left label {
     align-self: start;
@@ -44,13 +62,17 @@
     margin-left: 1rem;
     height: 100%;
 }
-.cnt-right input {
+.cnt-right textarea {
     background-color: var(--color-grey-2);
     border-radius: var(--border-radius-1);
     margin-bottom: 1rem;
     border: none;
     width: 400px;
     height: 200px;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    resize: none;
 }
 .cnt-right label {
     font-size: 1rem;

@@ -1,3 +1,4 @@
+/* Layout */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 :root {
   --color-primary: #77b6ea;
@@ -60,7 +61,7 @@ body {
   max-width: 1480px;
   position: fixed;
   top: 2rem;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   padding: 0 40px;
 }
@@ -97,9 +98,16 @@ nav {
 }
 
 nav a {
+  transition: color 500ms ease-in-out;
   color: var(--color-white);
 }
 
+nav a:hover {
+  transition: color 500ms ease-in-out;
+  color: var(--color-primary);
+}
+
+/* Styles for all pages relating to base positioning */
 .page {
   display: flex;
   flex-direction: column;
@@ -121,18 +129,6 @@ nav a {
   z-index: 1;
 }
 
-.button {
-  color: var(--color-black);
-  border-radius: var(--border-radius-1);
-  background-color: var(--color-primary);
-  border: none;
-  padding: 0.5rem;
-  width: 14rem;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-}
-
 .desc-header {
   display: flex;
   justify-content: center;
@@ -145,6 +141,91 @@ nav a {
   font-size: 3rem;
   letter-spacing: var(--letter-space-1);
   font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-secondary);
+  font-weight: 400;
+}
+
+footer p {
+  width: 400px;
+}
+
+footer p a {
+  text-decoration: underline;
+}
+
+footer div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 400px;
+  gap: 0.5rem;
+}
+
+footer div a {
+  color: var(--color-black);
+  font-size: 1.2rem;
+}
+
+/* Components */
+.button {
+  color: var(--color-black);
+  border-radius: var(--border-radius-1);
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0.5rem;
+  width: 14rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out;
+}
+
+.button:hover {
+  transition: background-color 500ms ease-in-out;
+  background-color: var(--color-secondary);
+}
+
+/* Main Pages */
+.curve-CNT, .curve-BLOG, .curve-PRJ, .curve-FP {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve-CNT svg, .curve-BLOG svg, .curve-PRJ svg, .curve-FP svg {
+  position: relative;
+  display: block;
+}
+
+.front-page-color {
+  background-color: var(--color-grey-1);
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-bottom: 4.5rem;
+}
+
+.curve-FP {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.curve-FP svg {
+  height: 73px;
+  width: calc(106% + 1.3px);
+}
+
+.curve-FP .shape-fill {
+  fill: var(--color-secondary);
 }
 
 .front-page {
@@ -217,6 +298,7 @@ h1 {
 .skills-page-color {
   background-color: var(--color-secondary);
   position: relative;
+  z-index: 2;
 }
 
 .skill-card {
@@ -297,6 +379,36 @@ h1 {
 .project-page-color {
   background-color: var(--color-grey-1);
   position: relative;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.curve-PRJ {
+  z-index: 2;
+}
+
+.curve-PRJ svg {
+  height: 94px;
+  width: calc(157% + 1.3px);
+}
+
+.curve-PRJ .shape-fill {
+  fill: var(--color-secondary);
+}
+
+.curve-BLOG {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.curve-BLOG svg {
+  height: 100px;
+  width: calc(120% + 1.3px);
+}
+
+.curve-BLOG .shape-fill {
+  fill: var(--color-primary);
 }
 
 .project-card {
@@ -388,6 +500,7 @@ h1 {
 .blog-page-color {
   background-color: var(--color-primary);
   position: relative;
+  z-index: 2;
 }
 
 .blog-card {
@@ -425,6 +538,23 @@ h1 {
 .contact-page-color {
   background-color: var(--color-grey-1);
   position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.curve-CNT {
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.curve-CNT svg {
+  height: 100px;
+  width: calc(120% + 1.3px);
+}
+
+.curve-CNT .shape-fill {
+  fill: var(--color-primary);
 }
 
 .page-container form {
@@ -449,6 +579,9 @@ h1 {
   width: 425px;
   height: 40px;
   margin-bottom: 1rem;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  padding: 0.5rem;
 }
 
 .cnt-left label {
@@ -475,13 +608,17 @@ h1 {
   height: 100%;
 }
 
-.cnt-right input {
+.cnt-right textarea {
   background-color: var(--color-grey-2);
   border-radius: var(--border-radius-1);
   margin-bottom: 1rem;
   border: none;
   width: 400px;
   height: 200px;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  resize: none;
 }
 
 .cnt-right label {
@@ -493,36 +630,8 @@ h1 {
   align-self: end;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: var(--color-secondary);
-  font-weight: 400;
-}
-
-footer p {
-  width: 400px;
-}
-
-footer p a {
-  text-decoration: underline;
-}
-
-footer div {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 400px;
-  gap: 0.5rem;
-}
-
-footer div a {
-  color: var(--color-black);
-  font-size: 1.2rem;
-}
-
+/* Extra Styles */
+/* Styles for background 'circles' in index.html */
 .circle-Cnt-4, .circle-Cnt-3, .circle-Cnt-2, .circle-Cnt-1, .circle-Prj-4, .circle-Prj-3, .circle-Prj-2, .circle-Prj-1, .circle-FP-4, .circle-FP-3, .circle-FP-2, .circle-FP-1 {
   overflow: hidden;
   position: absolute;
@@ -693,10 +802,12 @@ footer div a {
   transform: translate(0, -50%);
 }
 
+/* Mobile */
 /* SCREENS UNDER 1150PX
 
 ================================= */
 @media only screen and (max-width: 1150px) {
+  /* Sets all containers to column. */
   .page-container {
     flex-direction: column;
   }
@@ -705,10 +816,12 @@ footer div a {
     flex-direction: column;
   }
 
+  /* Sets width between blog-cards */
   .blog-card {
     margin: 1rem;
   }
 
+  /* Sets new widths and positions for cards */
   .project-card, .blog-card {
     width: 400px;
   }
@@ -721,7 +834,7 @@ footer div a {
     left: 22.5rem;
   }
 
-  .cnt-right, .cnt-right input {
+  .cnt-right, .cnt-right textarea {
     margin: 0;
     width: 100%;
   }
@@ -731,22 +844,27 @@ footer div a {
   }
 
   /* REMOVAL MOBILE */
+  /* Removes all circles from display */
   .mobile-Circle {
     display: none;
   }
 
+  /* Removes traditional navigation */
   .nav-navigation {
     display: none;
   }
 
+  /* Removes contact links */
   .contact-links {
     display: none;
   }
 
+  /* Removes hero-image */
   .fp-right {
     display: none;
   }
 
+  /* Removes footer created txt */
   .created {
     display: none;
   }

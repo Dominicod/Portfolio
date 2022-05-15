@@ -1,3 +1,28 @@
+@import "../abstracts/_placeholders/curve";
+@import "../abstracts/_mixins/size";
+
+.front-page-color {
+    background-color: var(--color-grey-1);
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-bottom: 4.5rem;
+}
+.curve-FP {
+    @extend %curve;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.curve-FP svg {
+    @extend %curveSVG;
+    @include size(73px, calc(106% + 1.3px));
+}
+
+.curve-FP .shape-fill {
+    fill: var(--color-secondary);
+}
 .front-page {
     display: flex;
     flex-direction: row;

@@ -3,7 +3,7 @@
 ================================= */
 
 @media only screen and (max-width: 1150px) {
-    // Sets all containers to column.
+    /* Sets all containers to column. */
     .page-container {
         flex-direction: column;
     }
@@ -11,12 +11,12 @@
         flex-direction: column;
     }
 
-    // Sets width between blog-cards
+    /* Sets width between blog-cards */
 
     .blog-card {
         margin: 1rem;
     }
-    // Sets new widths and positions for cards
+    /* Sets new widths and positions for cards */
 
     .project-card, .blog-card {
         width: 400px;
@@ -27,7 +27,7 @@
     .prj-gitlink {
         left: 22.5rem;
     }
-    .cnt-right, .cnt-right input {
+    .cnt-right, .cnt-right textarea {
         margin: 0;
         width: 100%;
     }
@@ -37,30 +37,30 @@
 
     /* REMOVAL MOBILE */
 
-    // Removes all circles from display
+    /* Removes all circles from display */
 
     .mobile-Circle {
         display: none;
     }
-    // Removes traditional navigation
+    /* Removes traditional navigation */
 
     .nav-navigation {
         display: none;
     }
 
-    // Removes contact links
+    /* Removes contact links */
 
     .contact-links {
         display: none;
     }
 
-    // Removes hero-image
+    /* Removes hero-image */
 
     .fp-right {
         display: none;
     }
 
-    // Removes footer created txt
+    /* Removes footer created txt */
 
     .created {
         display: none;

@@ -4,6 +4,36 @@
 .project-page-color {
     background-color: var(--color-grey-1);
     position: relative;
+    overflow-x: hidden;
+    z-index: 2;
+}
+.curve-PRJ {
+    @extend %curve;
+    z-index: 2;
+}
+
+.curve-PRJ svg {
+    @extend %curveSVG;
+    @include size(94px, calc(157% + 1.3px));
+}
+
+.curve-PRJ .shape-fill {
+    fill: var(--color-secondary);
+}
+.curve-BLOG {
+    @extend %curve;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.curve-BLOG svg {
+    @extend %curveSVG;
+    @include size(100px, calc(120% + 1.3px));
+}
+
+.curve-BLOG .shape-fill {
+    fill: var(--color-primary);
 }
 .project-card {
     @extend %card;
