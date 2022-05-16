@@ -4,6 +4,10 @@
     overflow-x: hidden;
     z-index: 1;
 }
+/* Curve to blend pages 
+
+##################### */
+
 .curve-CNT {
     @extend %curve;
     z-index: 2;
@@ -17,6 +21,9 @@
 .curve-CNT .shape-fill {
     fill: var(--color-primary);
 }
+
+/* ################# */
+
 .page-container form {
     display: flex;
     justify-content: center;

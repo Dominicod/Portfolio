@@ -1,3 +1,7 @@
+/* Traditional navigation 
+
+####################### */
+
 .nav-container {
     width: 100%;
     display: flex;
@@ -6,17 +10,18 @@
 .nav-body {
     max-width: 1480px;
     position: fixed;
-    top: 2rem;
+    top: 0;
     z-index: 10;
     width: 100%;
-    padding: 0 40px;
-}
-nav {
+    padding: 0.75rem 40px;
+    background-color: var(--color-grey-1);
+    border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    transition: 0.5s;
 }
 .nav-contact {
     display: flex;

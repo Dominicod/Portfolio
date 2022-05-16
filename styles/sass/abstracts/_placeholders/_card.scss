@@ -1,6 +1,7 @@
 %card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: var(--border-radius-1);
     box-shadow: var(--box-shadow-1);
 }

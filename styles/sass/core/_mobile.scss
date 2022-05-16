@@ -11,6 +11,12 @@
         flex-direction: column;
     }
 
+    /* Sets margin below textarea in contact to push button further away */
+
+    #text {
+        margin-bottom: 1rem;
+    }
+
     /* Sets width between blog-cards */
 
     .blog-card {

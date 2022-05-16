@@ -8,6 +8,11 @@
     overflow-x: hidden;
     padding-bottom: 4.5rem;
 }
+
+/* Curve to blend pages 
+
+##################### */
+
 .curve-FP {
     @extend %curve;
     bottom: 0;
@@ -23,6 +28,9 @@
 .curve-FP .shape-fill {
     fill: var(--color-secondary);
 }
+
+/* ################## */
+
 .front-page {
     display: flex;
     flex-direction: row;

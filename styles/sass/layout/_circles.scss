@@ -37,21 +37,6 @@
     left: 2rem;
 }
 
-.circle-FP-4 {
-    @include size(10vw, 10vw);
-    @extend %circle;
-    top: 0;
-    left: 30rem;
-}
-
-.circle-FP-4::before {
-    @include size(100%, 100%);
-    @extend %circle-translated;
-    background-color: var(--color-primary);
-    transform: translate(0, -50%);
-}
-
-
 /* PROJECT PAGE CIRCLES
 
 ================================= */

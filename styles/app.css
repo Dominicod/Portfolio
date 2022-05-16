@@ -51,6 +51,13 @@ body {
   padding: 0 40px;
 }
 
+.active {
+  display: inline-block;
+}
+
+/* Traditional navigation 
+
+####################### */
 .nav-container {
   width: 100%;
   display: flex;
@@ -60,18 +67,18 @@ body {
 .nav-body {
   max-width: 1480px;
   position: fixed;
-  top: 2rem;
+  top: 0;
   z-index: 10;
   width: 100%;
-  padding: 0 40px;
-}
-
-nav {
+  padding: 0.75rem 40px;
+  background-color: var(--color-grey-1);
+  border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  transition: 0.5s;
 }
 
 .nav-contact {
@@ -213,6 +220,9 @@ footer div a {
   padding-bottom: 4.5rem;
 }
 
+/* Curve to blend pages 
+
+##################### */
 .curve-FP {
   bottom: 0;
   left: 0;
@@ -228,6 +238,7 @@ footer div a {
   fill: var(--color-secondary);
 }
 
+/* ################## */
 .front-page {
   display: flex;
   flex-direction: row;
@@ -291,6 +302,7 @@ h1 {
 .blog-card, .project-card, .skill-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-1);
 }
@@ -372,6 +384,7 @@ h1 {
 .blog-card, .project-card, .skill-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-1);
 }
@@ -383,6 +396,9 @@ h1 {
   z-index: 2;
 }
 
+/* Curve to blend pages 
+
+##################### */
 .curve-PRJ {
   z-index: 2;
 }
@@ -411,6 +427,7 @@ h1 {
   fill: var(--color-primary);
 }
 
+/* ################## */
 .project-card {
   height: 450px;
   width: 450px;
@@ -424,7 +441,7 @@ h1 {
 
 .prj-img {
   width: 100%;
-  height: 225px;
+  height: 180px;
   background-color: var(--color-primary);
   border-radius: 5px 5px 0 0;
 }
@@ -493,6 +510,7 @@ h1 {
 .blog-card, .skill-card, .project-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-1);
 }
@@ -542,6 +560,9 @@ h1 {
   z-index: 1;
 }
 
+/* Curve to blend pages 
+
+##################### */
 .curve-CNT {
   z-index: 2;
   top: 0;
@@ -557,6 +578,7 @@ h1 {
   fill: var(--color-primary);
 }
 
+/* ################# */
 .page-container form {
   display: flex;
   justify-content: center;
@@ -632,25 +654,25 @@ h1 {
 
 /* Extra Styles */
 /* Styles for background 'circles' in index.html */
-.circle-Cnt-4, .circle-Cnt-3, .circle-Cnt-2, .circle-Cnt-1, .circle-Prj-4, .circle-Prj-3, .circle-Prj-2, .circle-Prj-1, .circle-FP-4, .circle-FP-3, .circle-FP-2, .circle-FP-1 {
+.circle-Cnt-4, .circle-Cnt-3, .circle-Cnt-2, .circle-Cnt-1, .circle-Prj-4, .circle-Prj-3, .circle-Prj-2, .circle-Prj-1, .circle-FP-3, .circle-FP-2, .circle-FP-1 {
   overflow: hidden;
   position: absolute;
   opacity: 10%;
   transition: opacity 1000ms ease-in-out;
 }
-.circle-Cnt-4:hover, .circle-Cnt-3:hover, .circle-Cnt-2:hover, .circle-Cnt-1:hover, .circle-Prj-4:hover, .circle-Prj-3:hover, .circle-Prj-2:hover, .circle-Prj-1:hover, .circle-FP-4:hover, .circle-FP-3:hover, .circle-FP-2:hover, .circle-FP-1:hover {
+.circle-Cnt-4:hover, .circle-Cnt-3:hover, .circle-Cnt-2:hover, .circle-Cnt-1:hover, .circle-Prj-4:hover, .circle-Prj-3:hover, .circle-Prj-2:hover, .circle-Prj-1:hover, .circle-FP-3:hover, .circle-FP-2:hover, .circle-FP-1:hover {
   transition: opacity 1000ms ease-in-out;
   opacity: 50%;
 }
 
-.circle-Cnt-4::before, .circle-Cnt-1::before, .circle-Prj-4::before, .circle-Prj-1::before, .circle-FP-4::before, .circle-FP-1::before {
+.circle-Cnt-4::before, .circle-Cnt-1::before, .circle-Prj-4::before, .circle-Prj-1::before, .circle-FP-1::before {
   content: "";
   position: absolute;
   border-radius: 50%;
   opacity: 100%;
   transition: opacity 1000ms ease-in-out;
 }
-.circle-Cnt-4:hover::before, .circle-Cnt-1:hover::before, .circle-Prj-4:hover::before, .circle-Prj-1:hover::before, .circle-FP-4:hover::before, .circle-FP-1:hover::before {
+.circle-Cnt-4:hover::before, .circle-Cnt-1:hover::before, .circle-Prj-4:hover::before, .circle-Prj-1:hover::before, .circle-FP-1:hover::before {
   transition: opacity 1000ms ease-in-out;
   opacity: 50%;
 }
@@ -688,20 +710,6 @@ h1 {
   border-radius: 50%;
   bottom: 8rem;
   left: 2rem;
-}
-
-.circle-FP-4 {
-  height: 10vw;
-  width: 10vw;
-  top: 0;
-  left: 30rem;
-}
-
-.circle-FP-4::before {
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-primary);
-  transform: translate(0, -50%);
 }
 
 /* PROJECT PAGE CIRCLES
@@ -814,6 +822,11 @@ h1 {
 
   .page-container form {
     flex-direction: column;
+  }
+
+  /* Sets margin below textarea in contact to push button further away */
+  #text {
+    margin-bottom: 1rem;
   }
 
   /* Sets width between blog-cards */
