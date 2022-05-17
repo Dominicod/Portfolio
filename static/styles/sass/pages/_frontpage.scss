@@ -1,5 +1,5 @@
-@import "../abstracts/_placeholders/curve";
-@import "../abstracts/_mixins/size";
+@import '../abstracts/_placeholders/curve';
+@import '../abstracts/_mixins/size';
 
 .front-page-color {
     background-color: var(--color-grey-1);
@@ -76,7 +76,7 @@ h1 {
     margin-top: 4rem;
 }
 .image {
-    background-image: url(../img/Temp-IMG.png);
+    background-image: url(static/img/Temp-IMG.png);
     height: 100vh;
     width: 40rem;
     background-repeat: no-repeat;

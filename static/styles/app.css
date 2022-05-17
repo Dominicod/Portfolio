@@ -524,7 +524,7 @@ h1 {
 .blog-card {
   height: 375px;
   width: 615px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   background-color: var(--color-grey-1);
 }
 .blog-card a {
