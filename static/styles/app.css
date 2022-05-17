@@ -55,6 +55,13 @@ body {
   display: inline-block;
 }
 
+.flashed-contact ul li {
+  color: red;
+  font-weight: 500;
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+
 /* Traditional navigation 
 
 ####################### */
@@ -292,7 +299,7 @@ h1 {
 }
 
 .image {
-  background-image: url(../img/Temp-IMG.png);
+  background-image: url(../../../../static/img/Temp-IMG.png);
   height: 100vh;
   width: 40rem;
   background-repeat: no-repeat;

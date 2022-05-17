@@ -7,12 +7,16 @@
         <!-- Styles + Font-awesome -->
         <link rel="stylesheet" href="../static/styles/app.css" />
         <script src="https://kit.fontawesome.com/39359afa97.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../static/img/favicon_io/site.webmanifest">
         <!-- Javascript -->
         <script src="../static/javascript/nav.js" defer></script>
-        <title>Portfolio</title>
+        <title>{{ title }}</title>
     </head>
-    <body>
         {% block navigation %} {% endblock %}
+    <body>
         <!-- MAIN CONTENT -->
         <main>
             {% block frontpage %} {% endblock %} 
@@ -22,24 +26,5 @@
             {% block contact %} {% endblock %}
         </main>
     </body>
-    <footer>
-        <p class="text-black created">Created with: SASS/Flask</p>
-        <p class="text-black credit">
-            @ 2022 Website made by
-            <a
-                class="text-black"
-                href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/"
-                target="_blank"
-                >Dominic O'Donnell</a
-            >
-        </p>
-        <div class="text-black">
-            <a href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/" target="_blank"
-                ><i class="fa fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Dominicod" target="_blank"
-                ><i class="fa fa-brands fa-github"></i
-            ></a>
-        </div>
-    </footer>
+    {% block footer %} {% endblock %}
 </html>

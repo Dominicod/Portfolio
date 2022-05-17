@@ -501,15 +501,26 @@
                 </p>
             </div>
         </header>
+        <div class="flashed-contact">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="flashes">
+                        {% for message in messages %}
+                            <li class="message_flash">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+        </div>
         <div class="page-container">
-            <form action="#">
+            <form action="/contacted" method="POST">
                 <div class="cnt-left">
                     <label class="text-primary" for="name">Name:</label>
-                    <input id="name" type="text" required />
+                    <input name="name" type="text" required />
                     <label class="text-primary" for="name">Email:</label>
-                    <input id="email" type="text" required />
+                    <input name="email" type="text" required />
                     <label class="text-primary" for="name">Company/Organization:</label>
-                    <input id="company" type="text" required />
+                    <input name="company" type="text" required />
                     <div class="text-white contact-links">
                         <a
                             href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/"
@@ -524,7 +535,7 @@
                 <div class="cnt-right">
                     <label class="text-primary" for="name">Message:</label>
 
-                    <textarea id="text" type="text" required></textarea>
+                    <textarea name="text" type="text" required></textarea>
 
                     <button class="button" type="submit">Submit</button>
                 </div>
@@ -538,4 +549,27 @@
     <div class="mobile-Circle circle-Cnt-4"></div>
 </section>
 
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <p class="text-black created">Created with: JS/SASS/Flask</p>
+    <p class="text-black credit">
+        @ 2022 Website made by
+        <a
+            class="text-black"
+            href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/"
+            target="_blank"
+            >Dominic O'Donnell</a
+        >
+    </p>
+    <div class="text-black">
+        <a href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/" target="_blank"
+            ><i class="fa fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Dominicod" target="_blank"
+            ><i class="fa fa-brands fa-github"></i
+        ></a>
+    </div>
+</footer>
 {% endblock %}
