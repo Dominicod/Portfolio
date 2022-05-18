@@ -46,7 +46,7 @@ def contacted():
     msg.body = message
     mail.send(msg)
 
-    return render_template('contacted.html', title=title)
+    return render_template('contacted.html', title=title, name=name)
 
 if __name__ == '__main__':
     app.run()

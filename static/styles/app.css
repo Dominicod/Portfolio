@@ -399,7 +399,7 @@ h1 {
 .project-page-color {
   background-color: var(--color-grey-1);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 2;
 }
 
@@ -451,6 +451,21 @@ h1 {
   height: 180px;
   background-color: var(--color-primary);
   border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dlorg-img {
+  background-image: url(../../../../static/img/project-img/dlorg.png);
+}
+
+.pool-img {
+  background-image: url(../../../../static/img/project-img/pool.png);
+}
+
+.portfolio-img {
+  background-image: url(../../../../static/img/project-img/portfolio.png);
 }
 
 .project-card h3 {
@@ -526,6 +541,7 @@ h1 {
   background-color: var(--color-primary);
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 .blog-card {
@@ -657,6 +673,40 @@ h1 {
 
 .cnt-right button {
   align-self: end;
+}
+
+.contacted-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-header-title {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 6rem;
+}
+
+.thankyou-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.thankyou-content-checkmark {
+  color: var(--color-secondary);
+  font-size: 8rem;
+}
+
+.thankyou-content-main {
+  color: var(--color-white);
+  font-weight: 400;
 }
 
 /* Extra Styles */
@@ -829,6 +879,11 @@ h1 {
 
   .page-container form {
     flex-direction: column;
+  }
+
+  /* Edits contact header size */
+  .contact-header-title {
+    font-size: 5rem;
   }
 
   /* Sets margin below textarea in contact to push button further away */

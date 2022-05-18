@@ -7,12 +7,11 @@
         <!-- Styles + Font-awesome -->
         <link rel="stylesheet" href="../static/styles/app.css" />
         <script src="https://kit.fontawesome.com/39359afa97.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../static/img/favicon_io/site.webmanifest">
-        <!-- Javascript -->
-        <script src="../static/javascript/nav.js" defer></script>
         <title>{{ title }}</title>
     </head>
         {% block navigation %} {% endblock %}
@@ -24,6 +23,7 @@
             {% block projects %} {% endblock %} 
             {% block blog %} {% endblock %} 
             {% block contact %} {% endblock %}
+            {% block contacted %} {% endblock %}
         </main>
     </body>
     {% block footer %} {% endblock %}

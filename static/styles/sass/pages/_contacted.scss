@@ -1,0 +1,29 @@
+.contacted-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-header-title {
+    text-align: center;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 6rem;
+}
+.thankyou-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.thankyou-content-checkmark {
+    color: var(--color-secondary);
+    font-size: 8rem;
+}
+.thankyou-content-main {
+    color: var(--color-white);
+    font-weight: 400;
+}

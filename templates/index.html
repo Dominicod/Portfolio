@@ -1,4 +1,6 @@
 {% extends "layout.html" %} {% block navigation %}
+<!-- Javascript -->
+<script src="../static/javascript/nav.js" defer></script>
 <!-- NAVIGATION -->
 <header class="nav-container">
     <nav id="navbar" class="nav-body">
@@ -54,11 +56,9 @@
             </h1>
             <p class="frontpage-txt">
                 I am a
-                <span style="color: var(--color-primary)">Software Engineer</span>
-                specializaing in
-                <span style="color: var(--color-secondary)">back-end web technologies</span>. I am a
-                life long learner, and a passionate technology enthusiast. I love solving complex
-                problems and thrive in a collaborative team environment.
+                <span style="color: var(--color-primary)">software engineer</span>
+                specialising in
+                <span style="color: var(--color-secondary)">back-end web technologies</span>. I have always been a student and I am passionate about technology. I love solving complex problems and thrive in a collaborative team environment.
             </p>
             <a
                 class="frontpage-btn button"
@@ -210,7 +210,7 @@
             <div class="desc text-white">
                 <p>
                     Below is projects I have either completely designed from development to
-                    production or projects I have contributed heavily on and will highlight those
+                    production or projects I have contributed heavily and will highlight those
                     contributions.
                 </p>
             </div>
@@ -219,162 +219,80 @@
             <div class="project-card-container">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Dominicod/dlorg" target="_blank"
+                            ><i class="fa fa-brands fa-github"></i
+                        ></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
+                    <div class="prj-img dlorg-img"></div>
+                    <h3 class="text-primary">dlorg</h3>
                     <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
+                        This program is designed to organize your downloads folder into
+                        subdirectories allowing the user to edit each extension and create new
+                        subdirectories to allow for ease of use. Compatible with most Linux distros
+                        and MacOS (Monterey)
                     </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
+                    <a
+                        class="text-secondary"
+                        href="https://github.com/Dominicod/dlorg"
+                        target="_blank"
+                        >Check it out!</a
+                    >
                     <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
+                        <span>Bash</span>
                     </div>
                 </div>
             </div>
             <div class="project-card-container">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Dominicod/delawarepoolservices" target="_blank"
+                            ><i class="fa fa-brands fa-github"></i
+                        ></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
+                    <div class="prj-img pool-img"></div>
+                    <h3 class="text-primary">Delaware Pool Service</h3>
                     <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
+                        Designed for a customer located within Delaware. This project had a
+                        three-day deadline due to the client's haste to launch a product for the
+                        beginning of summer. I learned a great deal about project scope,
+                        communicating and defining expectations.
                     </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
+                    <a class="text-secondary" href="https://delawarepoolservice.com" target="_blank"
+                        >Check it out!</a
+                    >
                     <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
+                        <span>PHP</span>
+                        <span>Bootstrap</span>
                     </div>
                 </div>
             </div>
             <div class="project-card-container">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Dominicod/Portfolio" target="_blank"
+                            ><i class="fa fa-brands fa-github"></i
+                        ></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
+                    <div class="prj-img portfolio-img"></div>
+                    <h3 class="text-primary">My Portfolio</h3>
                     <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
+                        Designed to showcase all my skills and projects within a single consolidated
+                        domain. For this project, I learned to arrange the files for code
+                        readability and optimization. I also focused on mobile responsiveness, which
+                        I succeeded in.
                     </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
+                    <a class="text-secondary" href="/" target="_blank">Check it out!</a>
                     <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card-container">
-                <div class="prj-gitlink">
-                    <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
-                    </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
-                    <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card-container">
-                <div class="prj-gitlink">
-                    <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
-                    </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
-                    <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card-container">
-                <div class="prj-gitlink">
-                    <div class="prj-git-img">
-                        <a href="#"><i class="fa fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="prj-img">Picture of Project</div>
-                    <h3 class="text-primary">Name of Project</h3>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum.
-                    </p>
-                    <a class="text-secondary" href="#">Check it out!</a>
-                    <div class="prj-skill-used text-white">
-                        <span>Node</span>
-                        <span>Flask</span>
-                        <span>SQLite3</span>
-                        <span>Rails</span>
-                        <span>React</span>
-                        <span>Docker</span>
+                        <span>Python/Flask</span>
+                        <span>SCSS</span>
+                        <span>Figma</span>
+                        <span>Javascript</span>
                     </div>
                 </div>
             </div>
@@ -410,38 +328,12 @@
             <div class="desc text-black">
                 <p>
                     I also write a blog! I write about all types of tech related content. A list of
-                    what I write about includes; Programming, Videogames, Networking, and more. I
+                    what I write about includes; Programming, Video games, Networking, and more. I
                     love teaching technology and helping others along their path.
                 </p>
             </div>
         </header>
         <div class="page-container">
-            <div class="blog-card">
-                <div class="blog-img">Blog Thumbnail</div>
-                <a href="#">Blog Title</a>
-                <div class="blog-time">
-                    <i class="text-secondary fa fa-solid fa-clock"></i>
-                    <p class="text-secondary">May 7, 2022</p>
-                </div>
-                <p class="text-white blog-desc">
-                    Intro is put here..ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum.
-                </p>
-            </div>
-            <div class="blog-card">
-                <div class="blog-img">Blog Thumbnail</div>
-                <a href="#">Blog Title</a>
-                <div class="blog-time">
-                    <i class="text-secondary fa fa-solid fa-clock"></i>
-                    <p class="text-secondary">May 7, 2022</p>
-                </div>
-                <p class="text-white blog-desc">
-                    Intro is put here..ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum.
-                </p>
-            </div>
             <div class="blog-card">
                 <div class="blog-img">Blog Thumbnail</div>
                 <a href="#">Blog Title</a>
@@ -502,15 +394,13 @@
             </div>
         </header>
         <div class="flashed-contact">
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    <ul class="flashes">
-                        {% for message in messages %}
-                            <li class="message_flash">{{ message }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            {% endwith %}
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                <li class="message_flash">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %} {% endwith %}
         </div>
         <div class="page-container">
             <form action="/contacted" method="POST">
@@ -535,7 +425,7 @@
                 <div class="cnt-right">
                     <label class="text-primary" for="name">Message:</label>
 
-                    <textarea name="text" type="text" required></textarea>
+                    <textarea id="text" name="text" type="text" required></textarea>
 
                     <button class="button" type="submit">Submit</button>
                 </div>
@@ -549,9 +439,7 @@
     <div class="mobile-Circle circle-Cnt-4"></div>
 </section>
 
-{% endblock %}
-
-{% block footer %}
+{% endblock %} {% block footer %}
 <footer>
     <p class="text-black created">Created with: JS/SASS/Flask</p>
     <p class="text-black credit">

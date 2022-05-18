@@ -4,7 +4,7 @@
 .project-page-color {
     background-color: var(--color-grey-1);
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 2;
 }
 
@@ -57,6 +57,18 @@
     height: 180px;
     background-color: var(--color-primary);
     border-radius: 5px 5px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dlorg-img {
+    background-image: url(../../../../static/img/project-img/dlorg.png);
+}
+.pool-img {
+    background-image: url(../../../../static/img/project-img/pool.png);
+}
+.portfolio-img {
+    background-image: url(../../../../static/img/project-img/portfolio.png);
 }
 .project-card h3 {
     font-size: 1.5rem;

@@ -1,1 +1,22 @@
 {% extends "layout.html" %}
+
+{% block contacted %}
+<div class="contacted-container container">
+    <header class="contact-header" id="header">
+        <h1 class="contact-header-title" data-lead-id="site-header-title">Thank you {{ name }}!</h1>
+    </header>
+    
+    <div class="thankyou-content">
+        <i class="fa fa-check thankyou-content-checkmark" id="checkmark"></i>
+        <p class="thankyou-content-main" data-lead-id="main-content-body">Thank you for reaching out. I will be with you as soon as possible, I have sent you an email so you have my contact information!</p>
+        <a
+                class="frontpage-btn button"
+                href="/"
+                >Return</a
+            >
+        <div class="mobile-Circle circle-FP-1"></div>
+        <div class="mobile-Circle circle-FP-2"></div>
+        <div class="mobile-Circle circle-FP-3"></div>
+    </div>
+</div>
+{% endblock %}

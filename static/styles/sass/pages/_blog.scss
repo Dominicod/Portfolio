@@ -5,6 +5,7 @@
     background-color: var(--color-primary);
     position: relative;
     z-index: 2;
+    overflow: hidden
 }
 .blog-card {
     @extend %card;
