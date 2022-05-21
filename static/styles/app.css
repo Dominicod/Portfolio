@@ -298,12 +298,17 @@ h1 {
   margin-top: 4rem;
 }
 
+.fp-right {
+  z-index: 10;
+}
+
 .image {
-  background-image: url(../../../../static/img/Temp-IMG.png);
+  background-image: url(../../../../static/img/dominicod.png);
   height: 100vh;
   width: 40rem;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 
 .blog-card, .project-card, .skill-card {
@@ -715,11 +720,6 @@ h1 {
   overflow: hidden;
   position: absolute;
   opacity: 10%;
-  transition: opacity 1000ms ease-in-out;
-}
-.circle-Cnt-4:hover, .circle-Cnt-3:hover, .circle-Cnt-2:hover, .circle-Cnt-1:hover, .circle-Prj-4:hover, .circle-Prj-3:hover, .circle-Prj-2:hover, .circle-Prj-1:hover, .circle-FP-3:hover, .circle-FP-2:hover, .circle-FP-1:hover {
-  transition: opacity 1000ms ease-in-out;
-  opacity: 50%;
 }
 
 .circle-Cnt-4::before, .circle-Cnt-1::before, .circle-Prj-4::before, .circle-Prj-1::before, .circle-FP-1::before {
@@ -727,11 +727,6 @@ h1 {
   position: absolute;
   border-radius: 50%;
   opacity: 100%;
-  transition: opacity 1000ms ease-in-out;
-}
-.circle-Cnt-4:hover::before, .circle-Cnt-1:hover::before, .circle-Prj-4:hover::before, .circle-Prj-1:hover::before, .circle-FP-1:hover::before {
-  transition: opacity 1000ms ease-in-out;
-  opacity: 50%;
 }
 
 /* FONT PAGE CIRCLE STYLES
@@ -757,7 +752,7 @@ h1 {
   background-color: var(--color-secondary);
   border-radius: 50%;
   top: 16rem;
-  right: 20rem;
+  right: 10rem;
 }
 
 .circle-FP-3 {

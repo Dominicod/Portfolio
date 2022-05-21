@@ -75,10 +75,14 @@ h1 {
 .frontpage-btn {
     margin-top: 4rem;
 }
+.fp-right {
+    z-index: 10;
+}
 .image {
-    background-image: url(../../../../static/img/Temp-IMG.png);
+    background-image: url(../../../../static/img/dominicod.png);
     height: 100vh;
     width: 40rem;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
 }

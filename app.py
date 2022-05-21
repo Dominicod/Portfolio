@@ -13,8 +13,6 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 mail = Mail(app)
 
-app.config.from_envvar('config')
-
 @app.route('/', methods=['GET'])
 def index():
     title = 'Portfolio'

@@ -4,22 +4,10 @@
     overflow: hidden;
     position: absolute;
     opacity: 10%;
-    transition: opacity 1000ms ease-in-out;
-
-    &:hover {
-        transition: opacity 1000ms ease-in-out;
-        opacity: 50%;
-    }
 }
 %circle-translated {
     content: "";
     position: absolute;
     border-radius: 50%;
     opacity: 100%;
-    transition: opacity 1000ms ease-in-out;
-
-    &:hover {
-        transition: opacity 1000ms ease-in-out;
-        opacity: 50%;
-    }
 }
