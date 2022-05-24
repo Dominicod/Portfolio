@@ -1,7 +1,11 @@
+@import '../abstracts/_placeholders/flexbox';
+
+/* HEADER STYLES
+
+======================== */
+
 .desc-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %justify-center-align-center;
     flex-direction: column;
     width: 100%;
 }

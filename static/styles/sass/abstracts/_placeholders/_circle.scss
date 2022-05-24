@@ -1,4 +1,6 @@
-/* Styles for background 'circles' in index.html */
+/* CIRCLE STYLES
+
+======================== */
 
 %circle {
     overflow: hidden;
@@ -6,7 +8,7 @@
     opacity: 10%;
 }
 %circle-translated {
-    content: "";
+    content: '';
     position: absolute;
     border-radius: 50%;
     opacity: 100%;

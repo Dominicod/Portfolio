@@ -1,5 +1,10 @@
 @import '../abstracts/_placeholders/curve';
 @import '../abstracts/_mixins/size';
+@import '../abstracts/_placeholders/flexbox';
+
+/* FRONT PAGE STYLES
+
+======================== */
 
 .front-page-color {
     background-color: var(--color-grey-1);
@@ -9,7 +14,7 @@
     padding-bottom: 4.5rem;
 }
 
-/* Curve to blend pages 
+/* CURVE TO BLEND PAGES
 
 ##################### */
 
@@ -32,10 +37,8 @@
 /* ################## */
 
 .front-page {
-    display: flex;
+    @extend %justify-between-align-center;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     height: 100vh;
     width: 100%;
 }
@@ -79,10 +82,9 @@ h1 {
     z-index: 10;
 }
 .image {
-    background-image: url(../../../../static/img/dominicod.png);
+    background-image: url(../../../../static/img/Programmer.svg);
     height: 100vh;
     width: 40rem;
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-position: center;
 }

@@ -1,5 +1,10 @@
 @import '../abstracts/_mixins/size';
 @import '../abstracts/_placeholders/card';
+@import '../abstracts/_placeholders/flexbox';
+
+/* PROJECT STYLES
+
+======================== */
 
 .project-page-color {
     background-color: var(--color-grey-1);
@@ -8,7 +13,7 @@
     z-index: 2;
 }
 
-/* Curve to blend pages 
+/* CURVE TO BLEND PAGES 
 
 ##################### */
 
@@ -88,10 +93,8 @@
     padding-bottom: 0.5rem;
 }
 .prj-skill-used {
+    @extend %justify-start-align-center;
     margin: 0.5rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -103,18 +106,15 @@
     border-radius: var(--border-radius-1);
 }
 .prj-git-img {
+    @extend %justify-center-align-center;
     position: absolute;
-    display: flex;
-    justify-content: center;
     font-size: 2rem;
 }
 .prj-gitlink {
+    @extend %justify-center-align-center;
     position: absolute;
     left: 25.5rem;
     top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--color-grey-1);
     width: 3rem;
     height: 3rem;

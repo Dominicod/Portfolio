@@ -1,13 +1,16 @@
+@import '../abstracts/_placeholders/flexbox';
+
 /* Traditional navigation 
 
 ####################### */
 
 .nav-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend %justify-center-align-center;
 }
 .nav-body {
+    @extend %justify-between-align-center;
+    flex-direction: row;
     max-width: 1480px;
     position: fixed;
     top: 0;
@@ -17,29 +20,19 @@
     background-color: var(--color-grey-1);
     border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
     font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
     transition: 0.5s;
 }
 .nav-contact {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @extend %justify-start-align-center;
     gap: 0.5rem;
     width: 140px;
 }
 .nav-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %justify-center-align-center;
     gap: 3rem;
 }
 .nav-links {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @extend %justify-end-align-center;
     gap: 0.5rem;
     width: 140px;
 }
@@ -50,4 +43,29 @@ nav a {
 nav a:hover {
     transition: color 500ms ease-in-out;
     color: var(--color-primary);
+}
+
+/* Hamburger navigation 
+
+####################### */
+
+.hamburger {
+    display: none;
+}
+.hamburger-icon {
+    color: var(--color-white);
+    cursor: pointer;
+}
+.hamburger-container {
+    position: fixed;
+    background-color: var(--color-grey-1);
+    border-radius: var(--border-radius-1);
+    padding: 1rem;
+    right: -7rem;
+    transition: 0.5s;
+}
+.hamburger-links {
+    @extend %justify-center-align-center;
+    flex-direction: column;
+    gap: 0.5rem;
 }

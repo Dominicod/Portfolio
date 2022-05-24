@@ -1,0 +1,27 @@
+/* COMMONLY USED FLEXBOX STYLES
+
+======================== */
+
+%justify-center-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%justify-between-align-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%justify-start-align-center {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+%justify-end-align-center {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

@@ -1,21 +1,21 @@
-/* Styles for all pages relating to base positioning */
+@import '../abstracts/_placeholders/flexbox';
+
+/* PAGE STYLES
+
+======================== */
 
 .page {
-    display: flex;
+    @extend %justify-center-align-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: auto;
     padding: 3rem 0 5rem 0;
     width: 100%;
 }
 .page-container {
+    @extend %justify-center-align-center;
     padding: 1rem 0;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 2.313rem;
     z-index: 1;
 }

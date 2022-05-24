@@ -1,5 +1,10 @@
 @import '../abstracts/_mixins/size';
 @import '../abstracts/_placeholders/card';
+@import '../abstracts/_placeholders/flexbox';
+
+/* SKILLS STYLES
+
+======================== */
 
 .skills-page-color {
     background-color: var(--color-secondary);
@@ -35,12 +40,10 @@
     color: var(--color-grey-1);
 }
 .skill-img-background {
+    @extend %justify-center-align-center;
     position: absolute;
     left: 7.5rem;
     bottom: 18.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--color-primary);
     width: 7rem;
     height: 7rem;
@@ -53,13 +56,13 @@
     letter-spacing: var(--letter-space-1);
     font-weight: 400;
 }
-.skill-card ul {
+.skills {
     padding: 2rem;
+    width: 350px;
+    height: 225px;
 }
-.skill-card ul li {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.skills li {
+    @extend %justify-start-align-center;
     flex-direction: row;
     gap: 0.5rem;
     padding: 0.5rem 0;

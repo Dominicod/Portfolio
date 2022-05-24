@@ -1,11 +1,16 @@
 @import '../abstracts/_placeholders/card';
+@import '../abstracts/_placeholders/flexbox';
 @import '../abstracts/_mixins/size';
+
+/* BLOG STYLES
+
+======================== */
 
 .blog-page-color {
     background-color: var(--color-primary);
     position: relative;
     z-index: 2;
-    overflow: hidden
+    overflow: hidden;
 }
 .blog-card {
     @extend %card;
@@ -26,9 +31,7 @@
     border-radius: 5px 5px 0 0;
 }
 .blog-time {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @extend %justify-start-align-center;
     gap: 0.5rem;
     padding: 0.5rem;
 }

@@ -1,6 +1,7 @@
 {% extends "layout.html" %} {% block navigation %}
-<!-- Javascript -->
+<!-- JAVASCRIPT -->
 <script src="../static/javascript/nav.js" defer></script>
+<script src="../static/javascript/animation.js" defer></script>
 <!-- NAVIGATION -->
 <header class="nav-container">
     <nav id="navbar" class="nav-body">
@@ -38,6 +39,35 @@
                 ></a>
             </li>
         </ul>
+        <div class="hamburger">
+            <i id="hamburger-icon" class="hamburger-icon fa fa-solid fa-bars"></i>
+            <div id="hamburger-container" class="hamburger-container">
+                <ul class="hamburger-links">
+                    <li>
+                        <a href="#front-page"><p>Home</p></a>
+                    </li>
+                    <li>
+                        <a href="#skills"><p>Skills</p></a>
+                    </li>
+                    <li>
+                        <a href="#project"><p>Projects</p></a>
+                    </li>
+                    <li>
+                        <a href="#blog"><p>Blog</p></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/dominic-o-donnell-6a689017a/"
+                            target="_blank"
+                            ><i class="fa fa-brands fa-linkedin"></i
+                        ></a>
+                        <a href="https://github.com/Dominicod" target="_blank"
+                            ><i class="fa fa-brands fa-github"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 {% endblock %} {% block frontpage %}
@@ -58,7 +88,9 @@
                 I am a
                 <span style="color: var(--color-primary)">software engineer</span>
                 specialising in
-                <span style="color: var(--color-secondary)">back-end web technologies</span>. I have always been a student and I am passionate about technology. I love solving complex problems and thrive in a collaborative team environment.
+                <span style="color: var(--color-secondary)">back-end web technologies</span>. I have
+                always been a student and I am passionate about technology. I love solving complex
+                problems and thrive in a collaborative team environment.
             </p>
             <a
                 class="frontpage-btn button"
@@ -115,7 +147,7 @@
                 </div>
                 <div class="skill-card">
                     <h3 class="text-white">Frontend</h3>
-                    <ul>
+                    <ul class="skills">
                         <li>
                             <i class="text-primary fa fa-solid fa-check"></i>
                             <p class="text-white">Javascript</p>
@@ -143,7 +175,7 @@
                 </div>
                 <div class="skill-card">
                     <h3 class="text-white">Backend</h3>
-                    <ul>
+                    <ul class="skills">
                         <li>
                             <i class="text-primary fa fa-solid fa-check"></i>
                             <p class="text-white">Python/Flask</p>
@@ -167,7 +199,7 @@
                 </div>
                 <div class="skill-card">
                     <h3 class="text-white">Tools</h3>
-                    <ul>
+                    <ul class="skills">
                         <li>
                             <i class="text-primary fa fa-solid fa-check"></i>
                             <p class="text-white">Linux</p>
@@ -439,6 +471,7 @@
     <div class="mobile-Circle circle-Cnt-4"></div>
 </section>
 
+<!-- FOOTER -->
 {% endblock %} {% block footer %}
 <footer>
     <p class="text-black created">Created with: JS/SASS/Flask</p>

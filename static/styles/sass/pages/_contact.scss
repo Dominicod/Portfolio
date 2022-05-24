@@ -1,10 +1,16 @@
+@import '../abstracts/_placeholders/flexbox';
+
+/* CONTACT STYLES
+
+======================== */
+
 .contact-page-color {
     background-color: var(--color-grey-1);
     position: relative;
     overflow-x: hidden;
     z-index: 1;
 }
-/* Curve to blend pages 
+/* CURVE TO BLEND PAGES
 
 ##################### */
 
@@ -25,16 +31,12 @@
 /* ################# */
 
 .page-container form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %justify-center-align-center;
     flex-direction: row;
 }
 .cnt-left {
-    display: flex;
-    justify-content: center;
+    @extend %justify-center-align-center;
     flex-direction: column;
-    align-items: center;
     height: 100%;
 }
 .cnt-left input {
@@ -54,10 +56,8 @@
     font-weight: 400;
 }
 .contact-links {
+    @extend %justify-start-align-center;
     width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     font-size: 1.2rem;
     gap: 0.5rem;
 }

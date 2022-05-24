@@ -1,7 +1,11 @@
+@import '../abstracts/_placeholders/flexbox';
+
+/* FOOTER STYLES
+
+======================== */
+
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %justify-between-align-center;
     padding: 0.5rem;
     background-color: var(--color-secondary);
     font-weight: 400;
@@ -15,9 +19,7 @@ footer p a {
 }
 
 footer div {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @extend %justify-end-align-center;
     width: 400px;
     gap: 0.5rem;
 }

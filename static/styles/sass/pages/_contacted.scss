@@ -1,9 +1,13 @@
+@import '../abstracts/_placeholders/flexbox';
+
+/* CONTACTED PAGE STYLES
+
+======================== */
+
 .contacted-container {
+    @extend %justify-center-align-center;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .contact-header-title {
@@ -13,9 +17,7 @@
     font-size: 6rem;
 }
 .thankyou-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %justify-center-align-center;
     flex-direction: column;
     gap: 1rem;
 }

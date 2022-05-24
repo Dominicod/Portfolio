@@ -1,5 +1,9 @@
-@import "../abstracts/_variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import '../abstracts/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* BOILERPLATE
+
+======================== */
 
 *,
 *::before,
@@ -32,7 +36,4 @@ body {
     max-width: 1480px;
     margin: 0 auto;
     padding: 0 40px;
-}
-.active {
-    display: inline-block;
 }

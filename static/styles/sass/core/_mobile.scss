@@ -1,3 +1,7 @@
+/* MOBILE STYLES
+
+======================== */
+
 /* SCREENS UNDER 1150PX
 
 ================================= */
@@ -11,7 +15,7 @@
         flex-direction: column;
     }
     /* Edits contact header size */
-    
+
     .contact-header-title {
         font-size: 5rem;
     }
@@ -29,7 +33,8 @@
     }
     /* Sets new widths and positions for cards */
 
-    .project-card, .blog-card {
+    .project-card,
+    .blog-card {
         width: 400px;
     }
     .contact-container form input {
@@ -38,12 +43,19 @@
     .prj-gitlink {
         left: 22.5rem;
     }
-    .cnt-right, .cnt-right textarea {
+    .cnt-right,
+    .cnt-right textarea {
         margin: 0;
         width: 100%;
     }
     .cnt-right button {
         align-self: center;
+    }
+
+    /* Enables Hamburger */
+
+    .hamburger {
+        display: inline-block;
     }
 
     /* REMOVAL MOBILE */
@@ -58,9 +70,9 @@
     .nav-navigation {
         display: none;
     }
-
-    /* Removes contact links */
-
+    .nav-links {
+        display: none;
+    }
     .contact-links {
         display: none;
     }
@@ -89,7 +101,8 @@
     .nav-body {
         top: 0.5rem;
     }
-    .project-card, .blog-card {
+    .project-card,
+    .blog-card {
         width: 350px;
     }
     .prj-gitlink {
