@@ -1,17 +1,20 @@
 from flask import Flask, render_template, request, flash, redirect
 from flask_mail import Mail, Message
-from os import environ
+import os
 
 app = Flask(__name__)
 mail=Mail(app)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = environ.get('username')
-app.config['MAIL_PASSWORD'] = environ.get('password')
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 mail = Mail(app)
+
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+SECRET_KEY = app.config['SECRET_KEY']
 
 @app.route('/', methods=['GET'])
 def index():
@@ -32,10 +35,12 @@ def contacted():
         flash('All fields not provided', 'error')
         return redirect('/#contact')
 
-    message = "Thank you for contacting Dominic O'Donnell. Extremely excited for this opportunity to reach out and I will be in touch with you as soon as possible!"
+    message = "Thank you for contacting Dominic O'Donnell. Extremely excited for this opportunity to reach out and I will be in touch with you as soon as possible! My personal email is: dominicodonnell99@gmail.com if you wish to reach out further."
     
     msg = Message('Thank you for contacting!', sender = app.config['MAIL_USERNAME'], recipients = [email])
     msg.body = message
+    print(app.config['MAIL_USERNAME'])
+    print(app.config['MAIL_PASSWORD'])
     mail.send(msg)
 
     message = f"Hello, my name is {name}, and I work for {company}. My email is {email}. I'd like to say: {text}"
