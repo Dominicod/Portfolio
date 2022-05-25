@@ -37,3 +37,12 @@ body {
     margin: 0 auto;
     padding: 0 40px;
 }
+.appear {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.appear.inview {
+    transform: translateY(0);
+    opacity: 1;
+}

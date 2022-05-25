@@ -8,7 +8,7 @@ const hamburgerContainer = document.getElementById("hamburger-container")
 
 // Adaptive navbar
 window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let scrollTop = window.scrollY
 
     // Hides navbar + hamburger on scroll
     if (scrollTop > lastScrollTop){

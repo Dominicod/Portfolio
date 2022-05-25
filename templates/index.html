@@ -1,6 +1,7 @@
 {% extends "layout.html" %} {% block navigation %}
 <!-- JAVASCRIPT -->
 <script src="../static/javascript/nav.js" defer></script>
+<script src="../static/javascript/animation.js" defer></script>
 <!-- NAVIGATION -->
 <header class="nav-container">
     <nav id="navbar" class="nav-body">
@@ -73,7 +74,7 @@
 <!-- FRONT-PAGE -->
 <section id="front-page" class="front-page-color">
     <div class="container front-page">
-        <div class="fp-left">
+        <div class="fp-left appear">
             <div class="frontpage-hello">
                 <div class="hello-line"></div>
                 <p>Hello!</p>
@@ -99,7 +100,7 @@
                 >Hire Me! (Download CV)</a
             >
         </div>
-        <div class="fp-right">
+        <div class="fp-right appear">
             <div class="image"></div>
         </div>
         <!-- BACKGROUND CIRCLES 1 -->
@@ -127,7 +128,7 @@
 <!-- SKILLS -->
 <section id="skills" class="skills-page-color">
     <div class="container page">
-        <header class="desc-header">
+        <header class="desc-header appear">
             <h2>Skills</h2>
             <div class="desc">
                 <p>
@@ -138,7 +139,7 @@
             </div>
         </header>
         <div class="page-container">
-            <div class="skill-card-container">
+            <div class="skill-card-container appear">
                 <div class="skill-img-background">
                     <div class="skill-img">
                         <i class="fa fa-solid fa-laptop-code"></i>
@@ -166,7 +167,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill-card-container">
+            <div class="skill-card-container appear">
                 <div class="skill-img-background">
                     <div class="skill-img">
                         <i class="fa fa-solid fa-database"></i>
@@ -190,7 +191,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill-card-container">
+            <div class="skill-card-container appear">
                 <div class="skill-img-background">
                     <div class="skill-img">
                         <i class="fa fa-solid fa-toolbox"></i>
@@ -236,7 +237,7 @@
         </svg>
     </div>
     <div class="container page">
-        <header class="desc-header text-white">
+        <header class="desc-header text-white appear">
             <h2>Projects</h2>
             <div class="desc text-white">
                 <p>
@@ -247,7 +248,7 @@
             </div>
         </header>
         <div class="page-container">
-            <div class="project-card-container">
+            <div class="project-card-container appear">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
                         <a href="https://github.com/Dominicod/dlorg" target="_blank"
@@ -275,7 +276,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card-container">
+            <div class="project-card-container appear">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
                         <a href="https://github.com/Dominicod/delawarepoolservices" target="_blank"
@@ -301,7 +302,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card-container">
+            <div class="project-card-container appear">
                 <div class="prj-gitlink">
                     <div class="prj-git-img">
                         <a href="https://github.com/Dominicod/Portfolio" target="_blank"
@@ -354,7 +355,7 @@
 <!-- BLOG -->
 <section id="blog" class="blog-page-color">
     <div class="container page">
-        <header class="desc-header text-black">
+        <header class="desc-header text-black appear">
             <h2>Blog</h2>
             <div class="desc text-black">
                 <p>
@@ -365,7 +366,7 @@
             </div>
         </header>
         <div class="page-container">
-            <div class="blog-card">
+            <div class="blog-card appear">
                 <div class="blog-img">Blog Thumbnail</div>
                 <a href="#">Blog Title</a>
                 <div class="blog-time">
@@ -378,7 +379,7 @@
                     in voluptate velit esse cillum.
                 </p>
             </div>
-            <div class="blog-card">
+            <div class="blog-card appear">
                 <div class="blog-img">Blog Thumbnail</div>
                 <a href="#">Blog Title</a>
                 <div class="blog-time">
@@ -413,7 +414,7 @@
         </svg>
     </div>
     <div class="container page">
-        <header class="desc-header text-white">
+        <header class="desc-header text-white appear">
             <h2>Contact</h2>
             <div class="desc text-white">
                 <p>
@@ -435,7 +436,7 @@
         </div>
         <div class="page-container">
             <form action="/contacted" method="POST">
-                <div class="cnt-left">
+                <div class="cnt-left appear">
                     <label class="text-primary" for="name">Name:</label>
                     <input name="name" type="text" required />
                     <label class="text-primary" for="name">Email:</label>
@@ -453,7 +454,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="cnt-right">
+                <div class="cnt-right appear">
                     <label class="text-primary" for="name">Message:</label>
 
                     <textarea id="text" name="text" type="text" required></textarea>

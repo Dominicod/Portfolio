@@ -57,6 +57,17 @@ body {
   padding: 0 40px;
 }
 
+.appear {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.appear.inview {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* FLASK FLASH
 
 ======================== */
@@ -380,7 +391,7 @@ footer div a {
   background-color: var(--color-grey-1);
   position: relative;
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-bottom: 4.5rem;
 }
 
@@ -860,7 +871,7 @@ h1 {
 .contact-page-color {
   background-color: var(--color-grey-1);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
 }
 
