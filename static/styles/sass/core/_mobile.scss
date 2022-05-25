@@ -94,7 +94,7 @@
 
 ================================= */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     main {
         margin-top: 0.5rem;
     }
@@ -107,5 +107,8 @@
     }
     .prj-gitlink {
         left: 19.5rem;
+    }
+    .cnt-left input {
+        width: 350px;
     }
 }

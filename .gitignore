@@ -200,4 +200,4 @@ cython_debug/
 # USER ADDED #
 ##############
 wordpress
-config.cfg
+portfolio.conf

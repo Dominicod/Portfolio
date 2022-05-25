@@ -11,7 +11,6 @@ function appear() {
         const elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
-            console.log(elementTop);
             appears[i].classList.add("inview");
         } else {
             appears[i].classList.remove("inview");
