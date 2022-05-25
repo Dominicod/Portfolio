@@ -42,8 +42,6 @@ def contacted():
     
     msg = Message('Thank you for contacting!', sender = app.config['MAIL_USERNAME'], recipients = [email])
     msg.body = message
-    print(app.config['MAIL_USERNAME'])
-    print(app.config['MAIL_PASSWORD'])
     mail.send(msg)
 
     message = f"Hello, my name is {name}, and I work for {company}. My email is {email}. I'd like to say: {text}"
