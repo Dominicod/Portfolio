@@ -38,7 +38,7 @@ def contacted():
         flash('All fields not provided', 'error')
         return redirect('/#contact')
 
-    # Email spam filter
+    # Email spam filter (Checks if the receiving email exists)
 
     app.config['EMAIL_API_KEY'] = os.getenv('EMAIL_API_KEY')
     api_url = f"https://api.verimail.io/v3/verify?email={email}&key={app.config['EMAIL_API_KEY']}"
