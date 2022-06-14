@@ -97,6 +97,7 @@
     @extend %justify-start-align-center;
     margin: 0.5rem;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.5rem;
     font-weight: 400;
 }
