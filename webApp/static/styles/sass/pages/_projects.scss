@@ -86,12 +86,15 @@
     padding: 0.5rem;
     font-weight: 400;
 }
-.project-card a {
+.prj-buttons {
     text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
     border-bottom: 1px solid var(--color-primary);
     padding-bottom: 0.5rem;
+}
+.prj-buttons a {
+    padding: 1rem;
 }
 .prj-skill-used {
     @extend %justify-start-align-center;
@@ -105,22 +108,4 @@
     background-color: var(--color-grey-1);
     padding: 0.2rem 0.5rem;
     border-radius: var(--border-radius-1);
-}
-.prj-git-img {
-    @extend %justify-center-align-center;
-    position: absolute;
-    font-size: 2rem;
-}
-.prj-gitlink {
-    @extend %justify-center-align-center;
-    position: absolute;
-    left: 25.5rem;
-    top: 1.5rem;
-    background-color: var(--color-grey-1);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-}
-.prj-git-img a {
-    color: #ff9900;
 }
