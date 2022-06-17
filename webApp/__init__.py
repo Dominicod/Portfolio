@@ -13,6 +13,7 @@ app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
+app.config['CAPTCHA_API'] = os.getenv('CAPTCHA_API')
 mail = Mail(app)
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
@@ -33,42 +34,45 @@ def contacted():
     email = request.form.get('email')
     company = request.form.get('company')
     text = request.form.get('text')
+    captcha = request.form.get('g-recaptcha-response')
+
+    if not captcha:
+        flash('Captcha not selected', 'error')
+        return redirect('/#contact')
 
     if not name or not email or not company or not text:
         flash('All fields not provided', 'error')
         return redirect('/#contact')
 
-    # Email spam filter (Checks if the receiving email exists)
+    # Email spam filter
 
-    app.config['EMAIL_API_KEY'] = os.getenv('EMAIL_API_KEY')
-    api_url = f"https://api.verimail.io/v3/verify?email={email}&key={app.config['EMAIL_API_KEY']}"
-    response = requests.get(api_url)
+    recapUrl = f"https://www.google.com/recaptcha/api/siteverify?response={captcha}&secret={app.config['CAPTCHA_API']}"
+    response = requests.get(recapUrl)
     json_data = response.json()
 
     # If email exists, continue to send, else throw exception
-
-    if json_data['deliverable'] == True:
+    if  json_data['success']:
         message = "Thank you for contacting Dominic O'Donnell. Extremely excited for this opportunity to reach out and I will be in touch with you as soon as possible! My personal email is: dominicodonnell99@gmail.com if you wish to reach out further."
         msg = Message('Thank you for contacting!', sender = app.config['MAIL_USERNAME'], recipients = [email])
         msg.body = message
 
         # Attempts to send message to receiver.
-        try:
-            mail.send(msg)
-        except: print("Exception thrown. Receiver")
+        #try:
+        #    mail.send(msg)
+        #except: print("Exception thrown. Receiver")
 
         message = f"Hello, my name is {name}, and I work for {company}. My email is {email}. I'd like to say: {text}"
         msg = Message('Contacted from Portfolio', sender = app.config['MAIL_USERNAME'], recipients = [app.config['MAIL_USERNAME']])
         msg.body = message
     
         # Attempts to send message to sender.
-        try:
-            mail.send(msg)
-        except: print("Exception thrown. Sender")
+        #try:
+        #    mail.send(msg)
+        #except: print("Exception thrown. Sender")
 
         return render_template('contacted.html', title=title, name=name)
     else:
-        flash('Email does not exist', 'error')
+        flash('Captcha Failed', 'error')
         return redirect('/#contact')
 
 if __name__ == '__main__':

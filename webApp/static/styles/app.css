@@ -85,7 +85,7 @@ body {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .desc-header, .page-container, .page, .hamburger-links, .nav-navigation, .nav-container {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .desc-header, .page-container, .page, .hamburger-links, .nav-navigation, .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +183,7 @@ nav a:hover {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .desc-header, .page-container, .page, .nav-container, .nav-navigation, .hamburger-links {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .desc-header, .page-container, .page, .nav-container, .nav-navigation, .hamburger-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +228,7 @@ footer div, .nav-links {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .desc-header, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .desc-header, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,7 @@ footer div, .nav-links {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +364,7 @@ footer div a {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +496,7 @@ h1 {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
+.thankyou-content, .contacted-container, .cnt-left, .skill-img-background, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,7 +611,7 @@ h1 {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
+.thankyou-content, .contacted-container, .cnt-left, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -763,7 +763,7 @@ h1 {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
+.thankyou-content, .contacted-container, .cnt-left, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -832,7 +832,7 @@ h1 {
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .cnt-left, .page-container form, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
+.thankyou-content, .contacted-container, .cnt-left, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -886,6 +886,7 @@ h1 {
 
 /* ################# */
 .page-container form {
+  display: flex;
   flex-direction: row;
 }
 
@@ -949,10 +950,15 @@ h1 {
   align-self: end;
 }
 
+.g-recaptcha {
+  padding-top: 1rem;
+  align-self: end;
+}
+
 /* COMMONLY USED FLEXBOX STYLES
 
 ======================== */
-.thankyou-content, .contacted-container, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background, .page-container form, .cnt-left {
+.thankyou-content, .contacted-container, .nav-container, .nav-navigation, .hamburger-links, .page, .page-container, .desc-header, .skill-img-background, .cnt-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1213,6 +1219,10 @@ h1 {
   }
 
   .cnt-right button {
+    align-self: center;
+  }
+
+  .g-recaptcha {
     align-self: center;
   }
 

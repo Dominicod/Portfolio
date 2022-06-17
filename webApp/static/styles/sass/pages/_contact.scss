@@ -31,8 +31,8 @@
 /* ################# */
 
 .page-container form {
-    @extend %justify-center-align-center;
-    flex-direction: row;
+    display: flex;
+    flex-direction: row
 }
 .cnt-left {
     @extend %justify-center-align-center;
@@ -86,5 +86,9 @@
     font-weight: 400;
 }
 .cnt-right button {
+    align-self: end;
+}
+.g-recaptcha {
+    padding-top: 1rem;
     align-self: end;
 }

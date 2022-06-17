@@ -2,6 +2,7 @@
 <!-- JAVASCRIPT -->
 <script src="../static/javascript/nav.js" defer></script>
 <script src="../static/javascript/animation.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- NAVIGATION -->
 <header class="nav-container">
     <nav id="navbar" class="nav-body">
@@ -412,7 +413,7 @@
             {% endif %} {% endwith %}
         </div>
         <div class="page-container">
-            <form action="/contacted" method="POST">
+            <form id="contact-form" action="/contacted" method="POST">
                 <div class="cnt-left appear">
                     <label class="text-primary" for="name">Name:</label>
                     <input name="name" type="text" required />
@@ -436,7 +437,10 @@
 
                     <textarea id="text" name="text" type="text" required></textarea>
 
-                    <button class="button" type="submit">Submit</button>
+                    <button class="button" type="submit"">Submit</button>
+
+                    <div class="g-recaptcha" data-sitekey="6Lc9_HsgAAAAAEdmQ8nD1a2zpYxfCk8Ia-YEyUZS"></div>
+
                 </div>
             </form>
         </div>
