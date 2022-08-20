@@ -9,14 +9,14 @@ mail=Mail(app)
 # Configures varibles for mail server
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
-app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+app.config['MAIL_USERNAME'] = '#'
+app.config['MAIL_PASSWORD'] = '#'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['CAPTCHA_API'] = os.getenv('CAPTCHA_API')
+app.config['CAPTCHA_API'] = '#'
 mail = Mail(app)
 
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = '#'
 SECRET_KEY = app.config['SECRET_KEY']
 
 # Main route to portfolio
@@ -57,18 +57,18 @@ def contacted():
         msg.body = message
 
         # Attempts to send message to receiver.
-        #try:
-        #    mail.send(msg)
-        #except: print("Exception thrown. Receiver")
+        try:
+            mail.send(msg)
+        except: print("Exception thrown. Receiver")
 
         message = f"Hello, my name is {name}, and I work for {company}. My email is {email}. I'd like to say: {text}"
         msg = Message('Contacted from Portfolio', sender = app.config['MAIL_USERNAME'], recipients = [app.config['MAIL_USERNAME']])
         msg.body = message
     
         # Attempts to send message to sender.
-        #try:
-        #    mail.send(msg)
-        #except: print("Exception thrown. Sender")
+        try:
+            mail.send(msg)
+        except: print("Exception thrown. Sender")
 
         return render_template('contacted.html', title=title, name=name)
     else:

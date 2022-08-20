@@ -1,5 +1,4 @@
-/* LAYOUT */
-/* VARIABLES
+/* LAYOUT */ /* VARIABLES
 
 ======================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
@@ -801,7 +800,7 @@ h1 {
 }
 
 .blog-card {
-  height: 375px;
+  height: 275px;
   width: 615px;
   margin-top: 2rem;
   background-color: var(--color-grey-1);
@@ -811,13 +810,6 @@ h1 {
   font-size: 1.5rem;
   font-weight: 400;
   padding: 0.5rem 0 0 0.5rem;
-}
-
-.blog-img {
-  width: 100%;
-  height: 200px;
-  background-color: var(--color-secondary);
-  border-radius: 5px 5px 0 0;
 }
 
 .blog-time {
@@ -1178,83 +1170,69 @@ h1 {
   .page-container {
     flex-direction: column;
   }
-
   .page-container form {
     flex-direction: column;
   }
-
   /* Edits contact header size */
   .contact-header-title {
     font-size: 5rem;
   }
-
   /* Sets margin below textarea in contact to push button further away */
   #text {
     margin-bottom: 1rem;
   }
-
   /* Sets width between blog-cards */
   .blog-card {
     margin: 1rem;
   }
-
+  .blog-img {
+    display: none;
+  }
   /* Sets new widths and positions for cards */
   .project-card,
 .blog-card {
     width: 400px;
   }
-
   .contact-container form input {
     width: 100%;
   }
-
   .prj-gitlink {
     left: 22.5rem;
   }
-
   .cnt-right,
 .cnt-right textarea {
     margin: 0;
     width: 100%;
   }
-
   .cnt-right button {
     align-self: center;
   }
-
   .g-recaptcha {
     align-self: center;
   }
-
   /* Enables Hamburger */
   .hamburger {
     display: inline-block;
   }
-
   /* REMOVAL MOBILE */
   /* Removes all circles from display */
   .mobile-Circle {
     display: none;
   }
-
   /* Removes traditional navigation */
   .nav-navigation {
     display: none;
   }
-
   .nav-links {
     display: none;
   }
-
   .contact-links {
     display: none;
   }
-
   /* Removes hero-image */
   .fp-right {
     display: none;
   }
-
   /* Removes footer created txt */
   .created {
     display: none;
@@ -1267,20 +1245,17 @@ h1 {
   main {
     margin-top: 0.5rem;
   }
-
   .nav-body {
     top: 0.5rem;
   }
-
   .project-card,
 .blog-card {
     width: 350px;
+    height: 425px;
   }
-
   .prj-gitlink {
     left: 19.5rem;
   }
-
   .cnt-left input {
     width: 350px;
   }

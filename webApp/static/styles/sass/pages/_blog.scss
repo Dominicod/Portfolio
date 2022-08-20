@@ -14,7 +14,7 @@
 }
 .blog-card {
     @extend %card;
-    @include size(375px, 615px);
+    @include size(275px, 615px);
     margin-top: 2rem;
     background-color: var(--color-grey-1);
     a {
@@ -24,12 +24,7 @@
         padding: 0.5rem 0 0 0.5rem;
     }
 }
-.blog-img {
-    width: 100%;
-    height: 200px;
-    background-color: var(--color-secondary);
-    border-radius: 5px 5px 0 0;
-}
+
 .blog-time {
     @extend %justify-start-align-center;
     gap: 0.5rem;

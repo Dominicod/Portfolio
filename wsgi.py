@@ -3,8 +3,8 @@ import os
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0, "/var/www/webApp/")
+sys.path.insert(0, "/var/www/html/dominwrites.com/")
 
 from webApp import app as application
 
-application.secret_key = os.getenv('SECRET_KEY')
+application.secret_key = '#'
