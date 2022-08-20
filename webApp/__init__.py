@@ -3,7 +3,6 @@ from flask_mail import Mail, Message
 import requests
 
 app = Flask(__name__)
-mail = Mail(app)
 
 # Configures variables for mail server
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -13,6 +12,7 @@ app.config['MAIL_PASSWORD'] = '#'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['CAPTCHA_API'] = '#'
+mail = Mail(app)
 
 app.config['SECRET_KEY'] = '#'
 SECRET_KEY = app.config['SECRET_KEY']
