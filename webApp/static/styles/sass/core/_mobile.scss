@@ -31,6 +31,9 @@
     .blog-card {
         margin: 1rem;
     }
+    .blog-img {
+        display: none;
+    }
     /* Sets new widths and positions for cards */
 
     .project-card,
@@ -107,6 +110,7 @@
     .project-card,
     .blog-card {
         width: 350px;
+        height: 425px;
     }
     .prj-gitlink {
         left: 19.5rem;
