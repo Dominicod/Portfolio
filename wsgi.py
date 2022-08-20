@@ -1,5 +1,4 @@
 #!/venv/bin/python
-import os
 import sys
 import logging
 from webApp import app as application
