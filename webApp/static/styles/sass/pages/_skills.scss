@@ -14,7 +14,7 @@
 }
 .skill-card {
     @extend %card;
-    @include size(350px, 350px);
+    @include size(350px, 250px);
     margin-top: 5rem;
     background-color: var(--color-grey-1);
 }
@@ -37,17 +37,17 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--color-grey-1);
 }
 .skill-img-background {
     @extend %justify-center-align-center;
     position: absolute;
-    left: 7.5rem;
+    left: 5rem;
     bottom: 18.5rem;
     background-color: var(--color-primary);
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
 }
 .skill-card h3 {
