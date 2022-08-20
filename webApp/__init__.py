@@ -46,7 +46,7 @@ def contacted():
 
     # Email spam filter
 
-    recaptcha_url = f"https://www.google.com/recaptcha/api/siteverify?response={captcha}&secret={app.config['CAPTCHA_API']} "
+    recaptcha_url = f"https://www.google.com/recaptcha/api/siteverify?response={captcha}&secret={app.config['CAPTCHA_API']}"
     response = requests.get(recaptcha_url)
     json_data = response.json()
 
