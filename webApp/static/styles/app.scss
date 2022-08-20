@@ -1,39 +1,39 @@
 /* LAYOUT */
 
-@import 'sass/core/boilerplate';
+@import './sass/core/_boilerplate.scss';
 
-@import 'sass/core/flashed';
+@import './sass/core/flashed';
 
-@import 'sass/layout/navigation';
+@import './sass/layout/_navigation.scss';
 
-@import 'sass/layout/page';
+@import './sass/layout/_page.scss';
 
-@import 'sass/layout/header';
+@import './sass/layout/_header.scss';
 
-@import 'sass/layout/footer';
+@import './sass/layout/_footer.scss';
 
 /* COMPONENTS */
 
-@import 'sass/components/buttons';
+@import './sass/components/_buttons.scss';
 
 /* MAIN PAGES */
 
-@import 'sass/pages/frontpage';
+@import './sass/pages/_frontpage.scss';
 
-@import 'sass/pages/skills';
+@import './sass/pages/_skills.scss';
 
-@import 'sass/pages/projects';
+@import './sass/pages/_projects.scss';
 
-@import 'sass/pages/blog';
+@import './sass/pages/_blog.scss';
 
-@import 'sass/pages/contact';
+@import './sass/pages/_contact.scss';
 
-@import 'sass/pages/contacted';
+@import './sass/pages/contacted.scss';
 
 /* EXTRA STYLES */
 
-@import 'sass/layout/circles';
+@import './sass/layout/_circles.scss';
 
 /* MOBLIE */
 
-@import 'sass/core/mobile';
+@import './sass/core/_mobile.scss';

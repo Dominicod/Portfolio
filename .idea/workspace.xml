@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5fcfc15a-8e74-4c15-be8f-f6cae425d774" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webApp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webApp/static/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webApp/static/styles/app.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webApp/static/styles/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webApp/static/styles/sass/pages/_frontpage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/webApp/static/styles/sass/pages/_frontpage.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webApp/static/styles" />
+      <recent name="$PROJECT_DIR$/webApp/static/styles/sass" />
       <recent name="$PROJECT_DIR$/webApp" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -88,6 +93,7 @@
       <updated>1661024063787</updated>
       <workItem from="1661024065546" duration="56000" />
       <workItem from="1661024299984" duration="1657000" />
+      <workItem from="1661025962479" duration="696000" />
     </task>
     <servers />
   </component>
