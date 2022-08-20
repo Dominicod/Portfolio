@@ -593,6 +593,7 @@ h1 {
 .prj-img {
   width: 100%;
   height: 185px;
+  align-self: start;
   background-color: var(--color-primary);
   border-radius: 5px 5px 0 0;
   background-repeat: no-repeat;
@@ -602,14 +603,20 @@ h1 {
 .dlorg-img {
   background-image: url(../img/project-img/dlorg.png); }
 
-.pool-img {
-  background-image: url(../img/project-img/pool.png); }
+.enigma-img {
+  background-image: url(../img/project-img/enigma.png); }
 
 .portfolio-img {
   background-image: url(../img/project-img/portfolio.png); }
 
 .project-card h3 {
   font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.3rem; }
+
+.project-card h4 {
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   margin-top: 0.3rem; }
