@@ -14,7 +14,7 @@
 }
 .skill-card {
     @extend %card;
-    @include size(350px, 250px);
+    @include size(350px, 300px);
     margin-top: 5rem;
     background-color: var(--color-grey-1);
 }
@@ -43,22 +43,22 @@
 .skill-img-background {
     @extend %justify-center-align-center;
     position: absolute;
-    left: 5rem;
-    bottom: 18.5rem;
+    left: 6.3rem;
+    bottom: 19rem;
     background-color: var(--color-primary);
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
 }
 .skill-card h3 {
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: var(--letter-space-1);
     font-weight: 400;
 }
 .skills {
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     width: 350px;
     height: 225px;
 }
