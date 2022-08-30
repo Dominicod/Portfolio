@@ -456,7 +456,7 @@ h1 {
 
 .skill-card {
   height: 350px;
-  width: 250px;
+  width: 300px;
   margin-top: 5rem;
   background-color: var(--color-grey-1); }
 
@@ -484,22 +484,22 @@ h1 {
 
 .skill-img-background {
   position: absolute;
-  left: 5rem;
-  bottom: 18.5rem;
+  left: 6.3rem;
+  bottom: 19rem;
   background-color: var(--color-primary);
   width: 6rem;
   height: 6rem;
   border-radius: 50%; }
 
 .skill-card h3 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: var(--letter-space-1);
   font-weight: 400; }
 
 .skills {
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   width: 350px;
   height: 225px; }
 
@@ -600,8 +600,8 @@ h1 {
   background-size: cover;
   background-position: center; }
 
-.dlorg-img {
-  background-image: url(../img/project-img/dlorg.png); }
+.relational-img {
+  background-image: url(../img/project-img/relational.png); }
 
 .enigma-img {
   background-image: url(../img/project-img/enigma.png); }
